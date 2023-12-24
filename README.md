@@ -1,4 +1,4 @@
-# dmresende.github.io
+
 # Bem-vindo(a) à Minha Página Pessoal - Em Construção!
 Olá, visitante! Sou Douglas Resende, e esta é a minha página pessoal. Aqui você encontrará informações sobre mim, meus interesses, minha jornada profissional e projetos em que estou trabalhando. Esta página está atualmente em construção, 
 então algumas partes ainda estão pendentes, mas estou animado para compartilhar um pouco sobre quem eu sou e o que faço.
