@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --color_primary: #D9D9D9;
+    --color_secondary: #FFFFFF;
+    --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary))
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: #000000;
+    background: transparent;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+}
+
+/*Dimensionamento - Padrão*/
+@media (min-width:1281px) and (orientation: landscape) {
+
+    .title {
+        margin-top: 5%;
+        font-size: 13vh;
+    }
+
+    .subtitle {
+        font-family: 'Barlow', sans-serif;
+        font-size: 4vh;
+        margin-top: 0.6vh;
+        transition: all ease-in 200ms;
+        animation: normal;
+    }
+
+    .badge {
+        background: var(--color_gradient);
+        border-radius: 8px;
+        padding: 0.2em 8em 0.2em 0.5em;
+        margin-right: -3em;
+        font-size: 3vh;
+        float: right;
+    }
+
+    .border-badge {
+        position: absolute;
+        float: right;
+        display: block;
+        height: 0.9vh;
+        width: 35vh;
+        margin: -0.5vh 0 0 85vh;
+        background: var(--color_gradient);
+    }
+
+    .download {
+        font-family: 'Barlow', sans-serif;
+        background: var(--color_gradient);
+        display: block;
+        border-radius: 8px;
+        padding: 0.3em 1em 0.3em 1em;
+        margin: 1em 0 0 0;
+        font-size: 2.2vh;
+        text-align: center;
+        width: 35vh;
+    }
+
+    .download:hover,
+    .download:hover i {
+        background: #000000;
+        color: #ffffff;
+        animation: all ease-in 200ms;
+        cursor: pointer;
+
+    }
+
+    .top {
+        position: absolute;
+        display: block;
+        float: left;
+        margin: 0;
+        top: 8%;
+        margin-left: 7%
+    }
+
+    .link {
+        font-family: 'Barlow', sans-serif;
+        font-size: 2.8vh;
+        margin-left: 5vh;
+    }
+
+    .link:first-child {
+        font-family: 'Barlow', sans-serif;
+        margin-left: 0;
+        cursor: default;
+        border-bottom: solid 3px var(--color_primary);
+        color: var(--color_primary);
+    }
+
+    .link:hover {
+        color: var(--color_primary);
+        transition: ease-in 0.2s;
+    }
+
+    spam {
+        background: var(--color_primary);
+        height: 100vh;
+        width: 1.6vh;
+        float: left;
+    }
+
+    .container-full {
+        display: flex;
+        background: #ffffff;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-col-1 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container-col-2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        width: 18%;
+        background: var(--color_gradient);
+    }
+
+    .center {
+        position: absolute;
+        margin: 0;
+        height: auto;
+        width: 115vh;
+        top: 50%;
+        left: 48%;
+        margin-right: -55%;
+        transform: translate(-55%, -55%);
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: -20%;
+    }
+
+    button {
+        background: var(--color_primary);
+        border-radius: 100%;
+        border: none;
+        height: 7vh;
+        width: 7vh;
+        margin-bottom: 4vh;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: var(--color_secondary);
+        transition: ease-in 0.2s;
+    }
+
+    i {
+        font-size: 9vh;
+    }
+
+
+    .profile {
+        height: 48vh;
+        width: 48vh;
+        margin-left: -68%;
+        border-radius: 100%;
+        background: url(https://github.com/dmresende.png) center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .projects {
+        background: var(--color_secondary);
+        position: absolute;
+        height: 58vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        margin: 6em 4em 4em 2em;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card:first-child {
+        margin-left: 0;
+    }
+
+
+    .card {
+        position: relative;
+        width: 28%;
+        height: 85%;
+        padding: 1.4em;
+        background: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 8px;
+        margin-left: 3%;
+    }
+
+    .card-body {
+        margin-top: 25%;
+        padding: 0 1em 0 1em;
+
+    }
+
+    .image {
+
+        width: 400px;
+        height: 400px;
+        margin-top: -25%;
+        size: contain center center;
+    }
+
+    .card-body h1 {
+        text-transform: uppercase;
+        font-size: 3.7vh;
+        margin: 0.8em 0 0.5em 0;
+        text-align: end;
+    }
+
+    .card-body p {
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+        font-size: 2.53vh;
+        margin: 0.6em 0 1.1em 0;
+    }
+
+    .card-body h3 {
+        font-family: 'Barlow', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 1.85vh;
+        color: #000000;
+        opacity: 0.8;
+    }
+
+    .buttons-group {
+        position: relative;
+        display: flex;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .card-button {
+        background: #ffffff;
+        border: solid 0.02em #000;
+        font-size: 2.5vh;
+        text-align: center;
+        padding: 0.5em;
+        width: 50%;
+    }
+
+    .card-button:last-child {
+        background: #000;
+        color: #fff;
+        border-left: none;
+    }
+
+
+    .card-button:hover {
+        background: var(--color_secondary);
+        color: #fff;
+        transition: ease-in 200ms;
+    }
+
+
+
+    .fixed {
+        background: #000000e1;
+        position: absolute;
+        border-radius: 100%;
+        width: 3vh;
+        height: 3vh;
+        margin: 0.4vh 0 0 1vh;
+        text-align: center;
+        font-size: 1.55vh;
+        padding: 0.4em;
+        scale: 1.1;
+        z-index: 1;
+    }
+
+    .fixed i {
+        color: var(--color_secondary);
+    }
+
+    .about {
+        position: relative;
+        display: block;
+        text-align: justify;
+        margin: 10%;
+        height: auto;
+        width: 100%;
+        top: 0%;
+    }
+
+    .about h1 {
+        font-size: 7vh;
+        text-align: center;
+        margin-bottom: 5vh;
+        ;
+        margin-top: 5%;
+    }
+
+    .about p {
+        font-size: 2.5vh;
+        line-height: 3.2vh;
+        margin: 3.5vh 2.5vh 0 2.5vh;
+    }
+
+    .badges {
+        display: flexbox;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .badges img {
+        height: 5.5vh;
+        width: 5.5vh;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 50px;
+    }
+
+    .badges img:hover {
+        transform: scale(1.9);
+        border-radius: 8px;
+    }
+
+
+    .btn-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 3;
+        border-radius: 100%;
+        height: 5.5vh;
+        width: 5.5vh;
+        padding: 1px;
+        background: var(--color_primary);
+        color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+
+    }
+
+    .btn-top i {
+        color: #ffffff;
+        scale: 0.9;
+    }
+
+    .btn-top:hover {
+        background: #000000;
+        transition: all ease-in 200ms;
+        color: #fff;
+    }
+
+    footer {
+        color: #ffffff;
+        background: #D9D9D9;
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25vh;
+    }
+
+
+    footer p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 0.9em;
+        color: #000000;
+    }
+
+}
+
+
+/* Dimensionamento Responsivo - Mobile */
+@media (max-width:1280px) {
+
+    .title {
+        margin: 6vh 0 0 0.3vh;
+        font-size: 6vh;
+        width: auto;
+    }
+
+    s .center p {
+        width: auto;
+        font-size: 2.7vh;
+        margin-top: 0.2vh;
+    }
+
+    spam {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 5vh;
+    }
+
+    .top {
+        background: #D9D9D9;
+        display: block;
+        position: absolute;
+        margin: 1vh 0 0 -23vh;
+    }
+
+    .link {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.8vh;
+        margin-left: 2vh;
+    }
+
+    .link:first-child {
+        font-family: 'Barlow', sans-serif;
+        color: #000000;
+        margin-left: 6vh;
+        border-bottom: solid 1px #000000;
+        cursor: default;
+    }
+
+    .link:first-child:hover {
+        color: #000000;
+        cursor: default;
+    }
+
+    .link:hover {
+        color: #fff;
+        transition: ease-in 0.2s;
+    }
+
+    .group {
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        margin-left: 9.5vh;
+        margin-top: -22.4vh;
+        width: 100%;
+        scale: 0.6;
+    }
+
+    button {
+        background: var(--color_primary);
+        border: none;
+        border-radius: 100%;
+        color: #000;
+        height: 7.5vh;
+        width: 7.5vh;
+        margin: 0vh 1vh 3vh 1vh;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+
+    }
+
+    button:hover i {
+        color: #ffffff;
+        transition: ease-in 0.2s;
+    }
+
+    button i {
+        scale: 0.9;
+    }
+
+
+    .container-full {
+        display: block;
+        background: #ffffff;
+        height: auto;
+        width: 100%;
+    }
+
+    .container-col-1 {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .container-col-2 {
+        background: var(--color_secondary);
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .center {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 22%;
+        text-align: center;
+    }
+
+    .profile {
+        position: absolute;
+        height: 36vh;
+        width: 36vh;
+        border-radius: 100%;
+        background: url(https://github.com/dmresende.png) center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: -48vh 0 0 0;
+
+    }
+
+    .badge {
+        float: right;
+        text-align: initial;
+        font-size: 2.3vh;
+        color: #000000;
+        background: var(--color_gradient);
+        padding: 0.2em 2em 0.2em 0.9em;
+    }
+
+
+    .download {
+        font-family: 'Barlow', sans-serif;
+        position: absolute;
+        display: block;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background: var(--color_gradient);
+        border-radius: 8px;
+        width: 90%;
+        margin-top: 50.5vh;
+        margin-left: 5%;
+        padding: 0.5em 0 0.5em 0;
+        font-size: 2.2vh;
+
+    }
+
+    .download:hover,
+    .download:hover i {
+        background: #000000;
+        color: #ffffff;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+
+    }
+
+
+    .projects {
+        background: var(--color_secondary);
+        position: absolute;
+        width: 100%;
+        height: 10em;
+        margin-top: 0%;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .card {
+        position: relative;
+        background: #ffffff;
+        width: 94%;
+        height: 99%;
+        margin: 0 0 10% 3%;
+        padding: 0;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+        border-radius: 8px;
+    }
+
+    .card:first-child {
+        margin-top: 20%;
+    }
+
+    .card-body {
+        margin-top: 25%;
+        padding: 0 2vh 0 2vh;
+
+    }
+
+    .image {
+        width: 100%;
+        margin-top: -25%;
+        size: contain center center;
+    }
+
+    .card-body h1 {
+        text-transform: uppercase;
+        text-align: end;
+        font-size: 3.55vh;
+        margin: 4vh 0 3vh 0;
+    }
+
+    .card-body p {
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+        font-size: 2.55vh;
+        margin: 0.6em 0.3em 1.1em 0.3em;
+
+    }
+
+    .card-body h3 {
+        font-family: 'Barlow', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 0.4em;
+        font-size: 1.75vh;
+        color: #000000;
+        opacity: 0.8;
+    }
+
+    .buttons-group {
+        position: relative;
+        display: flex;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .card-button {
+        border: solid 0.02em #000;
+        background: #ffffff;
+        color: #000000;
+        width: 50%;
+        text-align: center;
+        font-size: 2.5vh;
+        padding: 0.7em;
+    }
+
+    .card-button:last-child {
+        background: #000;
+        color: #fff;
+        border-left: none;
+    }
+
+
+    .card-button:hover {
+        background: var(--color_secondary);
+        color: #fff;
+        transition: ease-in 200ms;
+    }
+
+
+    .fixed {
+        background: #000000cc;
+        position: absolute;
+        border-radius: 100%;
+        width: 3vh;
+        height: 3vh;
+        margin: 1.8vh 0 0 1vh;
+        text-align: center;
+        font-size: 1.55vh;
+        padding: 0.4em;
+        scale: 1.1;
+        z-index: 1;
+    }
+
+    .fixed i {
+        color: var(--color_secondary);
+    }
+
+    .about {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 15vh;
+    }
+
+    .about h1 {
+        font-size: 5.5vh;
+    }
+
+    .about p {
+        font-size: 2.3vh;
+        margin: 5vh 4.7vh -2vh 4.7vh;
+        line-height: 3.2vh;
+        text-align: justify;
+    }
+
+    .badges {
+        display: flexbox;
+        margin: 6% 15% 0 15%;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .badges img {
+        height: 2.8em;
+        width: 2.8em;
+        margin: 0 2vh 3vh 2vh;
+        padding: 10px;
+        border-radius: 50px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .badges img:hover {
+        transform: scale(1.9);
+        border-radius: 8px;
+    }
+
+    footer {
+        background: #D9D9D9;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 0.9em;
+        color: #000000;
+    }
+
+    .btn-top {
+        font-size: 0;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: -2;
+    }
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color_primary);
+    border-radius: 0px;
+}
