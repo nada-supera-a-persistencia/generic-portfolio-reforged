@@ -37,7 +37,7 @@ function App() {
             <span className="badge"> hello world_ </span>
             <h1 className="title">Douglas Resende</h1>
             <p className="subtitle">Desenvolvedor de Software</p>
-            <a className="download" target="_blank" href="https://drive.google.com/file/d/1OKlDjpNGR6KSZirzUxAbSIIFteaWD-UP/view?usp=sharing">
+            <a className="download" target="_blank" href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI?usp=sharing">
               <i className="fa fa-file"></i> &nbsp;Download Curriculo
             </a>
           </div>
