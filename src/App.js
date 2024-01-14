@@ -6,7 +6,13 @@ import react from './img/react-logo-1.png';
 import ts from './img/Typescript.png';
 import csharp from './img/csharp.png';
 import postgre from './img/postgres-icon-27.jpg';
-import construcao from './img/emConstrucao.svg' 
+import construcao from './img/emConstrucao.svg'; 
+import expo from './img/expo.png';
+import node from './img/node.png'; 
+import express from './img/express.png'; 
+import passApp from './img/passApp.jpeg'; 
+import heatmap from './img/heatmap.png'; 
+import portifolio from './img/portifolio.jpeg'; 
 
 function App() {
   return (
@@ -51,21 +57,24 @@ function App() {
       <div className="container-full" id="projetos">
         <span className="projects"></span>
         <div className="card-group">
+          
           {/* Card_01 */}
           <div className="card">
             {/* Pinned */}
             <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
             <div className="card-body">
-              <img className="image" src={construcao} alt="Imagem do Projeto" />
+              <img className="image" src={passApp} alt="Imagem do Projeto" />
               <h1>pass-app</h1>
               <p>
-                Projeto App Gerador de senhas com caracteres especiais, podendo
-                ser escolhidos de 6 a 20 caracteres aleatórios para gerar uma
-                senha, e salva-lá. Com possibilidade de copia-lá para área de
-                transferência
+                Projeto App Gerador de senhas com caracteres especiais. Escolha quantos caracteres terá sua senha que salvamos para você.
               </p>
-              <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3>
+              <div className="projetoIcon">
+              <img className="projetoIcon img" src={react} alt="react/react-native" />
+              <img className='projetoIcon img' src={js} alt="js" />
+              <img className='projetoIcon img' src={expo} alt="expo" />
+              </div>
             </div>
+
             <div className="buttons-group">
               <a href="https://github.com/dmresende/password-app" target="_blank" className="card-button">Código</a>
               <a href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI" target="_blank" className="card-button">Projeto</a>
@@ -73,25 +82,55 @@ function App() {
           </div>
 
           {/* Card_02 */}
-          {/* <div className="card"> */}
+           <div className="card"> 
             {/* Pinned */}
-            {/* <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
+             <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
             <div className="card-body">
-              <img className="image" src={construcao} alt="Imagem do Projeto" />
-              <h1>pass-app</h1>
+              <img className="image" src={heatmap} alt="Imagem do Projeto" />
+              <h1>heatemap+</h1>
               <p>
-                Projeto App Gerador de senhas com caracteres especiais, podendo
-                ser escolhidos de 6 a 20 caracteres aleatórios para gerar uma
-                senha, e salva-lá. Com possibilidade de copia-lá para área de
-                transferência
+               Projeto em parceria com Brisa, Softex, Unoesc e Governo Federal.
+                Produção de um Heatmap em equipe. Solicite acesso.
               </p>
-              <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3>
+              <div className="projetoIcon">
+              <img className="projetoIcon img" src={html} alt="react/react-native" />
+              <img className='projetoIcon img' src={css} alt="js" />
+              <img className='projetoIcon img' src={js} alt="expo" />
+              <img className='projetoIcon img' src={node} alt="expo" />
+              <img className='projetoIcon img' src={express} alt="expo" />
+              {/* <img className='projetoIcon img' src={postgre} alt="expo" /> */}
+              </div>
+
             </div>
             <div className="buttons-group">
-              <a href="https://github.com/dmresende/password-app" target="_blank" className="card-button">Código</a>
-              <a href="https://drive.google.com/file/d/1fAHnrgDibavRImDVaI-I0r272uTL_gsW/view?usp=drive_link" target="_blank" className="card-button">Projeto</a>
+              <a href="https://github.com/dmresende/brisaEcombr" target="_blank" className="card-button">Código</a>
+              <a href="mailto:douglasmresende@gmail.com" target="_blank" className="card-button">Solicite</a>
             </div>
-          </div> */}
+          </div> 
+
+          {/* Card_03 */}
+          <div className="card"> 
+            {/* Pinned */}
+             <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
+            <div className="card-body">
+              <img className="image" src={portifolio} alt="Imagem do Projeto" />
+              <h1>Repositório</h1>
+              <p>
+                Projeto visa publicações e atualizações dos meus projetos dento de um contexto de portifólio. Sempre em construção.
+              </p>
+              <div className="projetoIcon">
+              <img className="projetoIcon img" src={react} alt="react/react-native" />
+              <img className='projetoIcon img' src={js} alt="js" />
+              <img className='projetoIcon img' src={css} alt="css" />
+              </div>
+{/*               
+              <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
+            </div>
+            <div className="buttons-group">
+              <a href="https://github.com/dmresende/portifolioresende" target="_blank" className="card-button">Código</a>
+              <a href="https://portifolioresende.vercel.app/" target="_blank" className="card-button">Projeto</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -130,18 +169,20 @@ function App() {
       </div>
 
       {/* <!--Tecnologias--> */}
+    <h3 className='stacks'>stacks</h3> 
       <div className="badges">
           <img className='badges img' src={html} alt="html" />
           <img className='badges img' src={css} alt="css" />
           <img className='badges img' src={js} alt="js" />
           <img className='badges img' src={react} alt="react/react-native" />
+          <img className='badges img' src={expo} alt="expo" />
           <img className='badges img' src={ts} alt="postgres" />
           <img className='badges img' src={csharp} alt="csharp" />
           <img className='badges img' src={postgre} alt="postgres" />
         </div>
 
       <footer>
-        <p>@2023 - Douglas Resende</p>
+        <p className='rodape'>@2023 - Douglas Resende</p>
       </footer>
 
       <link

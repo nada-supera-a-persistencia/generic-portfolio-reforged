@@ -21,6 +21,29 @@ h1 {
     font-family: 'Barlow', sans-serif;
 }
 
+.projetoIcon {
+    display: flexbox;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: center;
+}
+
+.projetoIcon img {
+    height: 4vh;
+    width: 4vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50px;
+
+}
+
+.projetoIcon img:hover {
+    transform: scale(1.9);
+    border-radius: 8px;
+}
+
 /*Dimensionamento - Padrão*/
 @media (min-width:1281px) and (orientation: landscape) {
 
@@ -124,8 +147,9 @@ h1 {
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
+        
     }
 
     .container-col-2 {
@@ -206,13 +230,22 @@ h1 {
     }
 
     .card-group {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: flex-start;
         margin: 6em 4em 4em 2em;
         height: 100%;
+        width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2em;
+        margin: 6em 4em 4em 2em;
+        height: 100%;
         width: 100%;
+        justify-content: center;
+        
+        
     }
 
     .card:first-child {
@@ -222,7 +255,6 @@ h1 {
 
     .card {
         position: relative;
-        width: 28%;
         height: 85%;
         padding: 1.4em;
         background: #ffffff;
@@ -239,10 +271,11 @@ h1 {
 
     .image {
 
-        width: 400px;
+        width: 200px;
         height: 400px;
         margin-top: -25%;
         size: contain center center;
+        border-radius: 8px;
     }
 
     .card-body h1 {
@@ -271,7 +304,7 @@ h1 {
     .buttons-group {
         position: relative;
         display: flex;
-        margin-top: 8%;
+        margin-top: 2%;
         width: 100%;
     }
 
@@ -576,6 +609,7 @@ h1 {
         font-size: 2.2vh;
 
     }
+
     .download:hover,
     .download:hover i {
         background: var(--color_hover);
@@ -731,7 +765,7 @@ h1 {
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
-        
+
     }
 
     .badges img {
@@ -772,6 +806,15 @@ h1 {
         z-index: -2;
     }
 
+}
+
+.stacks{
+    text-align: center;
+    padding: 10px;
+    border-top: 10px;
+}
+.rodape{
+    font-weight: bold;
 }
 
 /* width */
