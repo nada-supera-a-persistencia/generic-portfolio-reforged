@@ -1,14 +1,21 @@
 import './App.css';
 import html from './img/html.png';
+import htmlPB from './img/htmlPB.png';
 import css from './img/css.png';
+import cssPB from './img/cssPB.png';
 import js from './img/js.png';
+import jsPB from './img/jsPB.png';
 import react from './img/react-logo-1.png';
+import reactPB from './img/react-logo-1PB.png';
 import ts from './img/Typescript.png';
+import tsPB from './img/TypescriptPB.png';
 import csharp from './img/csharp.png';
+import csharpPB from './img/csharpPB.png';
 import postgre from './img/postgres.jpg';
 import construcao from './img/emConstrucao.svg';
 import expo from './img/expo.png';
 import node from './img/node.png';
+import nodePB from './img/nodePB.png';
 import express from './img/express.png';
 import passApp from './img/passApp.png';
 import heatmap from './img/heatmap.png';
@@ -70,8 +77,8 @@ function App() {
                 Projeto App Gerador de senhas com caracteres especiais. Escolha quantos caracteres terá sua senha que salvamos para você.
               </p>
               <div className="projetoIcon">
-                <img className="projetoIcon img" src={react} alt="react/react-native" />
-                <img className='projetoIcon img' src={js} alt="js" />
+                <img className="projetoIcon img" src={reactPB} alt="react/react-native" />
+                <img className='projetoIcon img' src={jsPB} alt="js" />
                 <img className='projetoIcon img' src={expo} alt="expo" />
               </div>
             </div>
@@ -94,10 +101,10 @@ function App() {
                 Produção de um Heatmap em equipe. Solicite acesso.
               </p>
               <div className="projetoIcon">
-                <img className="projetoIcon img" src={html} alt="react/react-native" />
-                <img className='projetoIcon img' src={css} alt="js" />
-                <img className='projetoIcon img' src={js} alt="expo" />
-                <img className='projetoIcon img' src={node} alt="expo" />
+                <img className="projetoIcon img" src={htmlPB} alt="react/react-native" />
+                <img className='projetoIcon img' src={cssPB} alt="js" />
+                <img className='projetoIcon img' src={jsPB} alt="expo" />
+                <img className='projetoIcon img' src={nodePB} alt="expo" />
                 <img className='projetoIcon img' src={express} alt="expo" />
                 {/* <img className='projetoIcon img' src={postgre} alt="expo" /> */}
               </div>
@@ -120,9 +127,9 @@ function App() {
                 Projeto visa publicações e atualizações dos meus projetos dento de um contexto de portifólio. Sempre em construção.
               </p>
               <div className="projetoIcon">
-                <img className="projetoIcon img" src={react} alt="react/react-native" />
-                <img className='projetoIcon img' src={js} alt="js" />
-                <img className='projetoIcon img' src={css} alt="css" />
+                <img className="projetoIcon img" src={reactPB} alt="react/react-native" />
+                <img className='projetoIcon img' src={jsPB} alt="js" />
+                <img className='projetoIcon img' src={cssPB} alt="css" />
               </div>
               {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
@@ -139,8 +146,8 @@ function App() {
         <div className="about" id="sobre_mim">
           <h1>Sobre mim</h1>
           <p>
-            Olá visitante!
-            Segue um breve resumo sobre minha jornada!
+            Olá visitante, segue um breve resumo sobre minha jornada!
+            <br />
             Iniciei minha jornada em 2017, onde tive meus primeiros contato com a programação com cursos livres, e uma ajuda imensa de amigos que estavam determinados a compartilhar seus conhecimentos.
             Sempre tive muito apresso por tecnologia, sempre me encantou entender , e entender integralmente, como essas maravilhas tecnológicas funcionam por trás.
             Em 2019 me Graduei em Direito pelo Centro Universitário Newton Paiva, aprovado pelo Exame XXX Nacional da OAB, sim, isso meu contato com a programação ocorreu durante meus ultimos semestres de faculade e aprovação no exame da ordem.
