@@ -230,13 +230,6 @@ h1 {
     }
 
     .card-group {
-        /* display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: flex-start;
-        margin: 6em 4em 4em 2em;
-        height: 100%;
-        width: 100%; */
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2em;
@@ -244,7 +237,6 @@ h1 {
         height: 100%;
         width: 100%;
         justify-content: center;
-        
         
     }
 
@@ -503,7 +495,6 @@ h1 {
         transition: ease-in 0.2s;
     }
 
-    /* Douglas ajustar esse tamaho */
     .group {
         position: absolute;
         display: flex;

@@ -24,6 +24,7 @@ function App() {
         <div className="container-col-1">
           <div className="top">
             <a className="link">Home</a>
+            <a className="link" href="#projetos">Projetos</a>
             <a className="link" href="#sobre_mim">Sobre mim</a>
           </div>
 
