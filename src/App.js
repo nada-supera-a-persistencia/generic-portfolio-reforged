@@ -5,14 +5,14 @@ import js from './img/js.png';
 import react from './img/react-logo-1.png';
 import ts from './img/Typescript.png';
 import csharp from './img/csharp.png';
-import postgre from './img/postgres-icon-27.jpg';
-import construcao from './img/emConstrucao.svg'; 
+import postgre from './img/postgres.jpg';
+import construcao from './img/emConstrucao.svg';
 import expo from './img/expo.png';
-import node from './img/node.png'; 
-import express from './img/express.png'; 
-import passApp from './img/passApp.jpeg'; 
-import heatmap from './img/heatmap.png'; 
-import portifolio from './img/portifolio.jpeg'; 
+import node from './img/node.png';
+import express from './img/express.png';
+import passApp from './img/passApp.png';
+import heatmap from './img/heatmap.png';
+import portifolio from './img/portifolio.png';
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
               <i className="fa fa-file"></i> &nbsp;Download Curriculo
             </a>
           </div>
-        </div>   
+        </div>
 
         <div className="container-col-2">
           <div className="profile"></div>
@@ -57,7 +57,7 @@ function App() {
       <div className="container-full" id="projetos">
         <span className="projects"></span>
         <div className="card-group">
-          
+
           {/* Card_01 */}
           <div className="card">
             {/* Pinned */}
@@ -69,9 +69,9 @@ function App() {
                 Projeto App Gerador de senhas com caracteres especiais. Escolha quantos caracteres terá sua senha que salvamos para você.
               </p>
               <div className="projetoIcon">
-              <img className="projetoIcon img" src={react} alt="react/react-native" />
-              <img className='projetoIcon img' src={js} alt="js" />
-              <img className='projetoIcon img' src={expo} alt="expo" />
+                <img className="projetoIcon img" src={react} alt="react/react-native" />
+                <img className='projetoIcon img' src={js} alt="js" />
+                <img className='projetoIcon img' src={expo} alt="expo" />
               </div>
             </div>
 
@@ -82,23 +82,23 @@ function App() {
           </div>
 
           {/* Card_02 */}
-           <div className="card"> 
+          <div className="card">
             {/* Pinned */}
-             <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
+            <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
             <div className="card-body">
               <img className="image" src={heatmap} alt="Imagem do Projeto" />
               <h1>heatemap+</h1>
               <p>
-               Projeto em parceria com Brisa, Softex, Unoesc e Governo Federal.
+                Projeto em parceria com Brisa, Softex, Unoesc e Governo Federal.
                 Produção de um Heatmap em equipe. Solicite acesso.
               </p>
               <div className="projetoIcon">
-              <img className="projetoIcon img" src={html} alt="react/react-native" />
-              <img className='projetoIcon img' src={css} alt="js" />
-              <img className='projetoIcon img' src={js} alt="expo" />
-              <img className='projetoIcon img' src={node} alt="expo" />
-              <img className='projetoIcon img' src={express} alt="expo" />
-              {/* <img className='projetoIcon img' src={postgre} alt="expo" /> */}
+                <img className="projetoIcon img" src={html} alt="react/react-native" />
+                <img className='projetoIcon img' src={css} alt="js" />
+                <img className='projetoIcon img' src={js} alt="expo" />
+                <img className='projetoIcon img' src={node} alt="expo" />
+                <img className='projetoIcon img' src={express} alt="expo" />
+                {/* <img className='projetoIcon img' src={postgre} alt="expo" /> */}
               </div>
 
             </div>
@@ -106,12 +106,12 @@ function App() {
               <a href="https://github.com/dmresende/brisaEcombr" target="_blank" className="card-button">Código</a>
               <a href="mailto:douglasmresende@gmail.com" target="_blank" className="card-button">Solicite</a>
             </div>
-          </div> 
+          </div>
 
           {/* Card_03 */}
-          <div className="card"> 
+          <div className="card">
             {/* Pinned */}
-             <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
+            <span className="fixed"><i className="fa fa-star fa-2x"></i></span>
             <div className="card-body">
               <img className="image" src={portifolio} alt="Imagem do Projeto" />
               <h1>Repositório</h1>
@@ -119,11 +119,11 @@ function App() {
                 Projeto visa publicações e atualizações dos meus projetos dento de um contexto de portifólio. Sempre em construção.
               </p>
               <div className="projetoIcon">
-              <img className="projetoIcon img" src={react} alt="react/react-native" />
-              <img className='projetoIcon img' src={js} alt="js" />
-              <img className='projetoIcon img' src={css} alt="css" />
+                <img className="projetoIcon img" src={react} alt="react/react-native" />
+                <img className='projetoIcon img' src={js} alt="js" />
+                <img className='projetoIcon img' src={css} alt="css" />
               </div>
-{/*               
+              {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
             </div>
             <div className="buttons-group">
@@ -138,48 +138,39 @@ function App() {
         <div className="about" id="sobre_mim">
           <h1>Sobre mim</h1>
           <p>
-            Sou um entusiasta da tecnologia e apaixonado por inovação. Estou
-            constantemente em busca de novas experiências e desafios que possam
-            enriquecer minha jornada profissional. Acredito no poder do
-            aprendizado contínuo e na colaboração como pilares essenciais para o
-            crescimento pessoal e profissional.Minha formação em Direito
-            contribuiu para o desenvolvimento de um pensamento analítico e
-            crítico, habilidades que aplico na resolução de problemas no mundo da
-            tecnologia. No entanto, foi quando fiz meu primeiro curso livre de
-            programação que descobri minha verdadeira paixão. Atualmente, estou me
-            dedicando ao desenvolvimento de habilidades de programação e me
-            tornando um profissional nesta área que tanto amo.
+            Olá visitante!
+            Segue um breve resumo sobre minha jornada!
+            Iniciei minha jornada em 2017, onde tive meus primeiros contato com a programação com cursos livres, e uma ajuda imensa de amigos que estavam determinados a compartilhar seus conhecimentos.
+            Sempre tive muito apresso por tecnologia, sempre me encantou entender , e entender integralmente, como essas maravilhas tecnológicas funcionam por trás.
+            Em 2019 me Graduei em Direito pelo Centro Universitário Newton Paiva, aprovado pelo Exame XXX Nacional da OAB, sim, isso meu contato com a programação ocorreu durante meus ultimos semestres de faculade e aprovação no exame da ordem.
           </p>
           <br />
           <p>
-            No momento, estou atuo no desenvolvimento de sistemas de gestão
-            CRM/ERP. Utilizo uma variedade de tecnologias, incluindo Visual Basic,
-            C#, SSMS, AngularJS e React Native, para criar soluções eficientes e
-            personalizadas. Estou em constante busca por conhecimento no campo do
-            desenvolvimento de software e estou empolgado em aprender e aplicar
-            novas tecnologias para criar soluções cada vez melhores.
+            Em 2021 iniciei minha transição de carreira, e comecei a trilhar o caminho profissional de um Desenvolvedor de Software!
+            Nesse mesmo ano consegui minha primeira oportunidade atuand no desenvolvimento de sistemas de gestão CRM/ERP.
+            Atualmente, estou me dedicando ao desenvolver minhas habilidades em programação e me dedicando a me tornar cada vez mais qualificado.
           </p>
           <p>
-          Adoraria me conectar com você! Se você compartilha interesses semelhantes ou deseja trocar ideias, sinta-se à vontade para entrar em contato comigo. Você pode me encontrar nas minhas redes. Obrigado por visitar minha página pessoal em construção. Fique à vontade para explorar e volte em breve para conferir as atualizações
+            Adoraria me conectar com você! Se você compartilha interesses semelhantes ou deseja trocar ideias, sinta-se à vontade para entrar em contato comigo. Você pode me encontrar nas minhas redes. Obrigado por visitar minha página pessoal em construção. Fique à vontade para explorar e volte em breve para conferir as atualizações
           </p>
 
         </div>
 
-        
+
       </div>
 
       {/* <!--Tecnologias--> */}
-    <h3 className='stacks'>stacks</h3> 
+      <h3 className='stacks'>stacks</h3>
       <div className="badges">
-          <img className='badges img' src={html} alt="html" />
-          <img className='badges img' src={css} alt="css" />
-          <img className='badges img' src={js} alt="js" />
-          <img className='badges img' src={react} alt="react/react-native" />
-          <img className='badges img' src={expo} alt="expo" />
-          <img className='badges img' src={ts} alt="postgres" />
-          <img className='badges img' src={csharp} alt="csharp" />
-          <img className='badges img' src={postgre} alt="postgres" />
-        </div>
+        <img className='badges img' src={html} alt="html" />
+        <img className='badges img' src={css} alt="css" />
+        <img className='badges img' src={js} alt="js" />
+        <img className='badges img' src={react} alt="react/react-native" />
+        <img className='badges img' src={expo} alt="expo" />
+        <img className='badges img' src={ts} alt="postgres" />
+        <img className='badges img' src={csharp} alt="csharp" />
+        <img className='badges img' src={postgre} alt="postgres" />
+      </div>
 
       <footer>
         <p className='rodape'>@2023 - Douglas Resende</p>
