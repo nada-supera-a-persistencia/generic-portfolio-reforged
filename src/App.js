@@ -81,12 +81,12 @@ function App() {
                 <img className='projetoIcon img' src={jsPB} alt="js" />
                 <img className='projetoIcon img' src={expo} alt="expo" />
               </div>
+              <div className="buttons-group">
+                <a href="https://github.com/dmresende/password-app" target="_blank" className="card-button">Código</a>
+                <a href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI" target="_blank" className="card-button">Projeto</a>
+              </div>
             </div>
 
-            <div className="buttons-group">
-              <a href="https://github.com/dmresende/password-app" target="_blank" className="card-button">Código</a>
-              <a href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI" target="_blank" className="card-button">Projeto</a>
-            </div>
           </div>
 
           {/* Card_02 */}
