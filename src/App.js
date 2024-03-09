@@ -98,7 +98,7 @@ function App() {
               <img className="image" src={passApp} alt="Imagem do Projeto" />
               <h1>pass-app</h1>
               <p>
-                Projeto App Gerador de senhas com caracteres especiais. Escolha
+                Projeto App Gerador de senhas. Escolha
                 quantos caracteres terá sua senha que salvamos para você.
               </p>
               <div className="projetoIcon">
