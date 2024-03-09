@@ -87,7 +87,6 @@ function App() {
 
       <h1 className="titles" id="projects">PROJECTS</h1>
       <div className="container-full">
-        <span className="projects"></span>
         <div className="card-group">
           {/* Card_01 */}
           <div className="card">
