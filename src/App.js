@@ -28,10 +28,10 @@ function App() {
 
         <div className="container-col-1">
           <div className="top">
-            <a 
-              className="link"  href="#home">
-                Home
-                </a>
+            <a
+              className="link" href="#home">
+              Home
+            </a>
             <a className="link" href="#projects">
               Projects
             </a>
@@ -73,7 +73,7 @@ function App() {
               className="download"
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1OKlDjpNGR6KSZirzUxAbSIIFteaWD-UP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1W6S0l5c8fpYhT53fAcE6a1QQuXmguMZF/view?usp=sharing"
             >
               <i className="fa fa-file"></i> &nbsp;Download Curriculo
             </a>
