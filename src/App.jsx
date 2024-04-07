@@ -1,6 +1,5 @@
 import "./App.css";
 import html from "./img/html.png";
-import htmlPB from "./img/htmlPB.png";
 import css from "./img/css.png";
 import cssPB from "./img/cssPB.png";
 import js from "./img/js.png";
@@ -17,7 +16,7 @@ import express from "./img/express.png";
 import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
-// import { projectCard as ProjectCard } from "../src/components/card-component/project-cad.jsx";
+import { projectCard as ProjectCard } from "../src/components/card-component/project-cad.jsx";
 
 export default function App() {
   return (
