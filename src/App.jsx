@@ -1,5 +1,6 @@
 import "./App.css";
 import html from "./img/html.png";
+import htmlPB from "./img/htmlPB.png";
 import css from "./img/css.png";
 import cssPB from "./img/cssPB.png";
 import js from "./img/js.png";
