@@ -9,6 +9,7 @@ import react from "./img/react-logo-1.png";
 import reactPB from "./img/react-logo-1PB.png";
 import ts from "./img/Typescript.png";
 import csharp from "./img/csharp.png";
+import sqlserver from "./img/sqlserver.png";
 import postgre from "./img/postgres.jpg";
 import expo from "./img/expo.png";
 import nodePB from "./img/nodePB.png";
@@ -16,30 +17,31 @@ import express from "./img/express.png";
 import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
+import { projectCard as ProjectCard } from "../src/components/card-component/project-cad.jsx";
 
-function App() {
+export default function App() {
   return (
     <>
       <a href="#home" className="btn-top">
         <i className="fa fa-arrow-up"></i>
       </a>
+
       <div className="container-full" id="home">
         <span></span>
 
         <div className="container-col-1">
           <div className="top">
-            <a
-              className="link" href="#home">
-              Home
+            <a className="link" href="#home">
+              Inicio
             </a>
             <a className="link" href="#projects">
-              Projects
+              Projetos
             </a>
             <a className="link" href="#about">
-              About
+              Sobre
             </a>
             <a className="link" href="#stacks">
-              Stack's
+              Tecnologias
             </a>
           </div>
 
@@ -54,7 +56,11 @@ function App() {
                   <i className="fa fa-linkedin fa-2x"></i>
                 </button>
               </a>
-              <a href="https://github.com/dmresende" rel="noreferrer" target="_blank">
+              <a
+                href="https://github.com/dmresende"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <button>
                   <i className="fa fa-github fa-3x"></i>
                 </button>
@@ -85,7 +91,9 @@ function App() {
         </div>
       </div>
 
-      <h1 className="titles" id="projects">PROJECTS</h1>
+      <h1 className="titles" id="projects">
+        PROJETOS
+      </h1>
       <div className="container-full">
         <div className="card-group">
           {/* Card_01 */}
@@ -98,8 +106,8 @@ function App() {
               <img className="image" src={passApp} alt="Imagem do Projeto" />
               <h1>pass-app</h1>
               <p>
-                Projeto App Gerador de senhas. Escolha
-                quantos caracteres terá sua senha que salvamos para você.
+                Projeto App Gerador de senhas. Escolha quantos caracteres terá
+                sua senha que salvamos para você.
               </p>
               <div className="projetoIcon">
                 <img
@@ -117,7 +125,7 @@ function App() {
                   rel="noreferrer"
                   className="card-button"
                 >
-                  CODE
+                  CÓDIGO
                 </a>
                 <a
                   href="https://drive.google.com/drive/folders/1iO00Wvj_yDvbkN84Tf13IeWFjIO7KuCI"
@@ -125,7 +133,7 @@ function App() {
                   rel="noreferrer"
                   className="card-button"
                 >
-                  PROJECT
+                  PROJETO
                 </a>
               </div>
             </div>
@@ -141,39 +149,32 @@ function App() {
               <img className="image" src={heatmap} alt="Imagem do Projeto" />
               <h1>heatemap+</h1>
               <p>
-                Projeto em parceria com Brisa, Softex, Unoesc e Governo Federal.
-                Produção de um Heatmap em equipe. Solicite acesso.
+                Projeto em parceria com Brisa, Unoesc e Governo Federal.
+                Produção de um Heatmap em equipe.
               </p>
               <div className="projetoIcon">
-                <img
-                  className="projetoIcon img"
-                  src={htmlPB}
-                  alt="react/react-native"
-                />
-                <img className="projetoIcon img" src={cssPB} alt="js" />
-                <img className="projetoIcon img" src={jsPB} alt="expo" />
-                <img className="projetoIcon img" src={nodePB} alt="expo" />
-                <img className="projetoIcon img" src={express} alt="expo" />
-                {/* <img className='projetoIcon img' src={postgre} alt="expo" /> */}
+                <img className="projetoIcon img" src={jsPB} alt="jsPB" />
+                <img className="projetoIcon img" src={nodePB} alt="nodePB" />
+                <img className="projetoIcon img" src={express} alt="express" />
               </div>
-            </div>
-            <div className="buttons-group">
-              <a
-                href="https://github.com/dmresende/brisaEcombr"
-                target="_blank"
-                rel="noreferrer"
-                className="card-button"
-              >
-                CODE
-              </a>
-              <a
-                href="mailto:douglasmresende@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="card-button"
-              >
-                REQUEST ACCESS
-              </a>
+              <div className="buttons-group">
+                <a
+                  href="https://github.com/dmresende/brisaEcombr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="card-button"
+                >
+                  CÓDIGO
+                </a>
+                <a
+                  href="mailto:douglasmresende@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="card-button"
+                >
+                  SOLICITE
+                </a>
+              </div>
             </div>
           </div>
 
@@ -187,8 +188,8 @@ function App() {
               <img className="image" src={portifolio} alt="Imagem do Projeto" />
               <h1>Repositório</h1>
               <p>
-                Projeto visa publicações e atualizações dos meus projetos dento
-                de um contexto de portifólio. Sempre em construção.
+                Projeto publicações e atualizações dos meus projetos em um
+                portifólio. Em construção.
               </p>
               <div className="projetoIcon">
                 <img
@@ -209,7 +210,7 @@ function App() {
                 rel="noreferrer"
                 className="card-button"
               >
-                CODE
+                CÓDIGO
               </a>
               <a
                 href="https://portifolioresende.vercel.app/"
@@ -217,7 +218,7 @@ function App() {
                 rel="noreferrer"
                 className="card-button"
               >
-                PROJECT
+                PROJETO
               </a>
             </div>
           </div>
@@ -226,7 +227,7 @@ function App() {
 
       <div className="container-full">
         <div className="about" id="about">
-          <h1>ABOUT</h1>
+          <h1>SOBRE</h1>
           <p>
             Olá visitante, segue um breve resumo sobre minha jornada!
             <br />
@@ -260,7 +261,9 @@ function App() {
       </div>
 
       {/* <!--Tecnologias--> */}
-      <h1 className="titles" id="stacks">STACK'S</h1>
+      <h1 className="titles" id="stacks">
+        TECNOLOGIAS
+      </h1>
       <div className="badges">
         <img className="badges img" src={html} alt="html" />
         <img className="badges img" src={css} alt="css" />
@@ -269,6 +272,7 @@ function App() {
         <img className="badges img" src={expo} alt="expo" />
         <img className="badges img" src={ts} alt="postgres" />
         <img className="badges img" src={csharp} alt="csharp" />
+        <img className="badges img" src={sqlserver} alt="sqlserver" />
         <img className="badges img" src={postgre} alt="postgres" />
       </div>
 
@@ -283,5 +287,3 @@ function App() {
     </>
   );
 }
-
-export default App;
