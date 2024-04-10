@@ -17,6 +17,7 @@ import express from "./img/express.png";
 import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
+import PortfolioFooter from "./components/portfolio-footer/index";
 
 export default function App() {
   return (
@@ -274,10 +275,9 @@ export default function App() {
         <img className="badges img" src={sqlserver} alt="sqlserver" />
         <img className="badges img" src={postgre} alt="postgres" />
       </div>
-
-      <footer>
-        <p className="rodape">@2023 - Douglas Resende</p>
-      </footer>
+      
+      {/* Portfolio footer */}
+      <PortfolioFooter />
 
       <link
         rel="stylesheet"
