@@ -17,12 +17,12 @@ import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioFooter from "./components/portfolio-footer/index";
-import UpPage from "./components/portifolio-up-page";
+import PortfolioPageUp from "./components/portifolio-up-page";
 
 export default function App() {
   return (
     <>
-      <UpPage />
+      <PortfolioPageUp />
 
       <div className="container-full" id="home">
         <span></span>

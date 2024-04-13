@@ -1,0 +1,6 @@
+:root {
+    --color_primary: #D9D9D9;
+    --color_secondary: #FFFFFF;
+    --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
+    --color_hover: #464343;
+}

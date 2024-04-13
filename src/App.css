@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Noto+Sans:wght@400;700&display=swap');
-
-:root {
-    --color_primary: #D9D9D9;
-    --color_secondary: #FFFFFF;
-    --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
-    --color_hover: #464343;
-    --color_links: #000;
-}
+@import url("./shared/styles/color.css");
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    /* color: #000000; */
     background: transparent;
     font-family: 'Barlow', sans-serif;
 }
@@ -37,7 +29,6 @@ h1 {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     border-radius: 50px;
-
 }
 
 .projetoIcon img:hover {
@@ -51,7 +42,6 @@ h1 {
     .title {
         margin-top: 5%;
         font-size: 13vh;
-
     }
 
     .subtitle {
@@ -100,7 +90,6 @@ h1 {
         color: #ffffff;
         animation: all ease-in 200ms;
         cursor: pointer;
-
     }
 
     .top {
@@ -130,7 +119,6 @@ h1 {
     .link:hover {
         color: var(--color_hover);
         transition: ease-in 0.2s;
-
     }
 
     .spam {
@@ -215,7 +203,6 @@ h1 {
         font-size: 9vh;
     }
 
-
     .profile {
         height: 48vh;
         width: 48vh;
@@ -250,7 +237,6 @@ h1 {
         margin-left: 0;
     }
 
-
     .card {
         position: relative;
         /* height: 80%; */
@@ -264,7 +250,6 @@ h1 {
     .card-body {
         margin-top: 25%;
         padding: 0 1em 0 1em;
-
     }
 
     .image {
@@ -325,8 +310,6 @@ h1 {
         color: #fff;
         transition: ease-in 200ms;
     }
-
-
 
     .fixed {
         background: #000000e1;
@@ -394,7 +377,6 @@ h1 {
         border-radius: 8px;
     }
 
-
     footer {
         color: #ffffff;
         background: #D9D9D9;
@@ -406,13 +388,11 @@ h1 {
         margin-top: 25vh;
     }
 
-
     footer p {
         font-family: 'Barlow', sans-serif;
         font-size: 0.9em;
         color: #000000;
     }
-
 }
 
 
@@ -491,7 +471,6 @@ h1 {
         cursor: pointer;
         display: block;
         text-align: center;
-
     }
 
     button:hover i {
@@ -502,7 +481,6 @@ h1 {
     button i {
         scale: 0.9;
     }
-
 
     .container-full {
         display: block;
@@ -549,7 +527,6 @@ h1 {
         background-size: contain;
         background-repeat: no-repeat;
         margin: -48vh 0 0 0;
-
     }
 
     .badge {
@@ -575,7 +552,6 @@ h1 {
         padding: 0.5em 0 0.5em 0;
         font-size: 2.2vh;
         color: var(--color_links);
-
     }
 
     .download:hover,
@@ -585,7 +561,6 @@ h1 {
         transition: ease-in 0.2s;
         cursor: pointer;
     }
-
 
     .projects {
         background: var(--color_secondary);
@@ -623,7 +598,6 @@ h1 {
     .card-body {
         margin-top: 25%;
         padding: 0 2vh 0 2vh;
-
     }
 
     .image {
@@ -680,13 +654,11 @@ h1 {
         border-left: none;
     }
 
-
     .card-button:hover {
         background: var(--color_hover);
         color: var(--color_secondary);
         transition: ease-in 200ms;
     }
-
 
     .fixed {
         background: #000000cc;
@@ -732,7 +704,6 @@ h1 {
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
-
     }
 
     .badges img {
@@ -758,13 +729,11 @@ h1 {
         align-items: center;
     }
 
-
     footer p {
         font-family: 'Barlow', sans-serif;
         font-size: 0.9em;
         color: #000000;
     }
-
 }
 
 .titles {
