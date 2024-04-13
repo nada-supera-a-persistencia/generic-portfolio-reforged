@@ -24,11 +24,20 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     }
 
-
-
     .btn-top:hover {
         background: var(--color_hover);
         transition: all ease-in 200ms;
         color: #fff;
     }
+}
+
+@media (max-width:1280px) {
+    .btn-top {
+        font-size: 0;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: -2;
+    }
+
 }

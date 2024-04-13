@@ -18,6 +18,7 @@ import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioFooter from "./components/portfolio-footer/index";
 import UpPage from "./components/portifolio-up-page";
+import Header from "./components/portifolio-header";
 
 export default function App() {
   return (
@@ -28,20 +29,7 @@ export default function App() {
         <span></span>
 
         <div className="container-col-1">
-          <div className="top">
-            <a className="link" href="#home">
-              Inicio
-            </a>
-            <a className="link" href="#projects">
-              Projetos
-            </a>
-            <a className="link" href="#about">
-              Sobre
-            </a>
-            <a className="link" href="#stacks">
-              Tecnologias
-            </a>
-          </div>
+          <Header />
 
           <div className="center">
             <div className="group">
