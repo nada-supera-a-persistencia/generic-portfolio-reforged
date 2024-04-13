@@ -1,6 +1,5 @@
 import "./App.css";
 import html from "./img/html.png";
-import htmlPB from "./img/htmlPB.png";
 import css from "./img/css.png";
 import cssPB from "./img/cssPB.png";
 import js from "./img/js.png";
@@ -18,13 +17,12 @@ import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioFooter from "./components/portfolio-footer/index";
+import UpPage from "./components/portifolio-up-page";
 
 export default function App() {
   return (
     <>
-      <a href="#home" className="btn-top">
-        <i className="fa fa-arrow-up"></i>
-      </a>
+      <UpPage />
 
       <div className="container-full" id="home">
         <span></span>
@@ -275,7 +273,7 @@ export default function App() {
         <img className="badges img" src={sqlserver} alt="sqlserver" />
         <img className="badges img" src={postgre} alt="postgres" />
       </div>
-      
+
       {/* Portfolio footer */}
       <PortfolioFooter />
 
