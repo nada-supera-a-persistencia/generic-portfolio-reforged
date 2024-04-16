@@ -1,0 +1,23 @@
+imagens: src/img/* 
+componentes: src/components/*
+
+# Adiciona label 'melhoria' para todos os pull requests que são abertos e tem 'feat' no nome
+Melhoria:
+ - head-branch: ['^Feat', 'Feat', '^feat', 'feat']
+
+# Adiciona label 'correção' para todos os pull requests que são abertos e tem 'fix' no nome
+Correção:
+ - head-branch: ['^fix', 'fix', '^Fix', 'Fix']
+ 
+# Adiciona label 'Correção crítica' para todos os pull requests que são abertos e tem 'hot-fix'
+Correção crítica:
+ - head-branch: ['^hot-fix', 'hot-fix', '^Hot-Fix', 'Hot-Fix']
+
+# Adiciona label 'produção' para todos pull requests que são abertos para branch `master`
+Produção:
+ - base-branch: 'master'
+
+# Adiciona label 'Documentação' para todos pull requests que mexem nos arquivos .md do projeto
+Documentação:
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
