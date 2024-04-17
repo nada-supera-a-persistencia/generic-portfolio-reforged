@@ -1,5 +1,3 @@
 {
-    "conventionalCommits.scopes": [
-        "componente-footer"
-    ]
+  "conventionalCommits.scopes": ["componente-footer", "componente-stacks"]
 }
