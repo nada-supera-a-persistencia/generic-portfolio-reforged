@@ -3,4 +3,5 @@
     --color_secondary: #FFFFFF;
     --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
     --color_hover: #464343;
+    --color_links: #000000;
 }

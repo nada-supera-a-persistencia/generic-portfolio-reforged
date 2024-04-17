@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Noto+Sans:wght@400;700&display=swap');
-@import url("./shared/styles/color.css");
+@import url("./shared/styles/colors.css");
 
 * {
     margin: 0;
@@ -413,6 +413,7 @@ h1 {
         font-family: 'Barlow', sans-serif;
         font-size: 1.8vh;
         margin-left: 2vh;
+        color: var(--color_links);
     }
 
     .link:first-child {

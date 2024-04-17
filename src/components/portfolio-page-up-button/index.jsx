@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "./style.css";
 
-export default function PortfolioPageUp() {
+export default function PortfolioPageUpButton() {
   return (
     <a href="#home" className="btn-top">
       <FaArrowUp />
