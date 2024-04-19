@@ -1,4 +1,4 @@
-"workflow":
+"workflows":
   - changed-files:
       - any-glob-to-any-file:
           - '.github/workflows/*'
@@ -18,11 +18,6 @@
       - any-glob-to-any-file:
           - 'src/shared/styles/*'
 
-"desenvolvido":
-  - changed-files:
-      - any-glob-to-any-file:
-          - '*'
-  
 "testes": 
     - changed-files:
       - any-glob-to-any-file:
