@@ -10,14 +10,12 @@ import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioFooter from "./components/portfolio-footer/index";
 import PortfolioStacks from "./components/portfolio-stacks";
+import PortfolioPageUpButton from "./components/portfolio-page-up-button";
 
 export default function App() {
   return (
     <>
-      <a href="#home" className="btn-top">
-        <i className="fa fa-arrow-up"></i>
-      </a>
-
+      <PortfolioPageUpButton />
       <div className="container-full" id="home">
         <span></span>
 
@@ -254,6 +252,7 @@ export default function App() {
 
       {/* <!--Tecnologias--> */}
       <PortfolioStacks />
+
 
       {/* Portfolio footer */}
       <PortfolioFooter />
