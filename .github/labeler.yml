@@ -1,23 +1,26 @@
-imagens: src/img/* 
-componentes: src/components/*
+"workflows":
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/*'
+    
+"componentes":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/components/*'
+  
+"imagens":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/img/*'
 
-# Adiciona label 'melhoria' para todos os pull requests que são abertos e tem 'feat' no nome
-Melhoria:
- - head-branch: ['^Feat', 'Feat', '^feat', 'feat']
+"estilos":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/shared/styles/*'
 
-# Adiciona label 'correção' para todos os pull requests que são abertos e tem 'fix' no nome
-Correção:
- - head-branch: ['^fix', 'fix', '^Fix', 'Fix']
- 
-# Adiciona label 'Correção crítica' para todos os pull requests que são abertos e tem 'hot-fix'
-Correção crítica:
- - head-branch: ['^hot-fix', 'hot-fix', '^Hot-Fix', 'Hot-Fix']
+"testes": 
+    - changed-files:
+      - any-glob-to-any-file:
+        - "**/*.tests.ts"  
 
-# Adiciona label 'produção' para todos pull requests que são abertos para branch `master`
-Produção:
- - base-branch: 'master'
-
-# Adiciona label 'Documentação' para todos pull requests que mexem nos arquivos .md do projeto
-Documentação:
-- changed-files:
-  - any-glob-to-any-file: '**/*.md'
+  

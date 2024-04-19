@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
-        "componente-footer",
-        "workflow"
+      "componente-arrow-up",
+      "componente-footer",
+      "workflow"
     ]
-}
+  }
