@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Noto+Sans:wght@400;700&display=swap');
-
-:root {
-    --color_primary: #D9D9D9;
-    --color_secondary: #FFFFFF;
-    --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
-    --color_hover: #464343;
-}
+@import url("./shared/styles/colors.css");
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    color: #000000;
     background: transparent;
     font-family: 'Barlow', sans-serif;
 }
@@ -36,7 +29,6 @@ h1 {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     border-radius: 50px;
-
 }
 
 .projetoIcon img:hover {
@@ -89,6 +81,7 @@ h1 {
         font-size: 2.2vh;
         text-align: center;
         width: 35vh;
+        color: var(--color_links);
     }
 
     .download:hover,
@@ -97,7 +90,6 @@ h1 {
         color: #ffffff;
         animation: all ease-in 200ms;
         cursor: pointer;
-
     }
 
     .top {
@@ -106,13 +98,14 @@ h1 {
         float: left;
         margin: 0;
         top: 8%;
-        margin-left: 7%
+        margin-left: 7%;
     }
 
     .link {
         font-family: 'Barlow', sans-serif;
         font-size: 2.8vh;
         margin-left: 5vh;
+        color: var(--color_links);
     }
 
     .link:first-child {
@@ -150,7 +143,7 @@ h1 {
         justify-content: center;
         height: 90vh;
         width: 100%;
-        
+
     }
 
     .container-col-2 {
@@ -210,7 +203,6 @@ h1 {
         font-size: 9vh;
     }
 
-
     .profile {
         height: 48vh;
         width: 48vh;
@@ -238,13 +230,12 @@ h1 {
         height: 100%;
         width: 100%;
         justify-content: center;
-        
+
     }
 
     .card:first-child {
         margin-left: 0;
     }
-
 
     .card {
         position: relative;
@@ -259,7 +250,6 @@ h1 {
     .card-body {
         margin-top: 25%;
         padding: 0 1em 0 1em;
-
     }
 
     .image {
@@ -320,8 +310,6 @@ h1 {
         color: #fff;
         transition: ease-in 200ms;
     }
-
-
 
     .fixed {
         background: #000000e1;
@@ -388,36 +376,6 @@ h1 {
         transform: scale(1.9);
         border-radius: 8px;
     }
-
-
-    .btn-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        z-index: 3;
-        border-radius: 100%;
-        height: 5.5vh;
-        width: 5.5vh;
-        padding: 1px;
-        background: var(--color_primary);
-        color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-
-    }
-
-    .btn-top i {
-        color: #ffffff;
-        scale: 0.9;
-    }
-
-    .btn-top:hover {
-        background: var(--color_hover);
-        transition: all ease-in 200ms;
-        color: #fff;
-    }
 }
 
 
@@ -455,6 +413,7 @@ h1 {
         font-family: 'Barlow', sans-serif;
         font-size: 1.8vh;
         margin-left: 2vh;
+        color: var(--color_links);
     }
 
     .link:first-child {
@@ -496,7 +455,6 @@ h1 {
         cursor: pointer;
         display: block;
         text-align: center;
-
     }
 
     button:hover i {
@@ -507,7 +465,6 @@ h1 {
     button i {
         scale: 0.9;
     }
-
 
     .container-full {
         display: block;
@@ -554,7 +511,6 @@ h1 {
         background-size: contain;
         background-repeat: no-repeat;
         margin: -48vh 0 0 0;
-
     }
 
     .badge {
@@ -579,7 +535,7 @@ h1 {
         margin-left: 5%;
         padding: 0.5em 0 0.5em 0;
         font-size: 2.2vh;
-
+        color: var(--color_links);
     }
 
     .download:hover,
@@ -588,9 +544,7 @@ h1 {
         color: #ffffff;
         transition: ease-in 0.2s;
         cursor: pointer;
-
     }
-
 
     .projects {
         background: var(--color_secondary);
@@ -628,7 +582,6 @@ h1 {
     .card-body {
         margin-top: 25%;
         padding: 0 2vh 0 2vh;
-
     }
 
     .image {
@@ -685,13 +638,11 @@ h1 {
         border-left: none;
     }
 
-
     .card-button:hover {
         background: var(--color_hover);
         color: var(--color_secondary);
         transition: ease-in 200ms;
     }
-
 
     .fixed {
         background: #000000cc;
@@ -737,7 +688,6 @@ h1 {
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
-
     }
 
     .badges img {
@@ -753,20 +703,9 @@ h1 {
         transform: scale(1.9);
         border-radius: 8px;
     }
-
- 
-
-    .btn-top {
-        font-size: 0;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        z-index: -2;
-    }
-
 }
 
-.titles{
+.titles {
     text-align: center;
     padding: 10px;
     border-top: 10px;
