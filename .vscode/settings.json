@@ -2,7 +2,7 @@
   "conventionalCommits.scopes": [
     "componente-arrow-up",
     "componente-footer",
-    "workflow"
+    "workflow",
+    "configuração-repositório"
   ]
 }
-
