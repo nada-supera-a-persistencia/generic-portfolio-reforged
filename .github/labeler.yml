@@ -22,15 +22,15 @@
   - changed-files:
       - any-glob-to-any-file:
           - 'src/shared/styles/*'
-''
+
 "Alterado: Testes": 
     - changed-files:
       - any-glob-to-any-file:
-        - "**/*.tests.ts"  
+        - '**/*.tests.ts'
   
 "Alterado: Documentação": 
     - changed-files:
       - any-glob-to-any-file:
-        - "**/*.md"  
+        - '**/*.md'
 
   
