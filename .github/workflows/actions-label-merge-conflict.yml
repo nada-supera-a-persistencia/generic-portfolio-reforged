@@ -1,7 +1,8 @@
 name: "pull merge conflict labeler"
 on:
-  - pull_request_target
-    types: [synchronize]
+  - pull_request_target:
+      types:
+      - closed
 
 jobs:
   main:
