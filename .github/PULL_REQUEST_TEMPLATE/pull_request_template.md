@@ -1,19 +1,18 @@
 ## :memo: Descrição
 
 <!--
-Docuementação: https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests
-
+Documentação: https://docs.github.com/pt/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests
 Adicione abaixo uma palavra-chave para vincular a issue neste PR. Exemplo:
 
 Issue: Closes #10
 
-Também verifique ses o titulo do PR possui o mesmo nome da Issue(tarefa)
+Também verifique se o título do PR possui o mesmo nome da Issue(tarefa)
 -->
 Issue:  
 
 <!--
 Abaixo descreva quais alterações este PR está realizando,
-podendo ser detalhado por arquivo ou por modulo alterado.
+podendo ser detalhado por arquivo ou por módulo alterado.
 -->
 ### :hammer_and_wrench: Alterações realizadas
 
