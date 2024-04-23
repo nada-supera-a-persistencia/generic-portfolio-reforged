@@ -1,20 +1,23 @@
-name: Nova Tarefa de Documentação
-description: Crie uma nova tarefa de documentação do projeto
-title: "[Docs]: Descreva o título da tarefa aqui"
-labels: [Documentação]
+name: Feature Request
+description: Sugira algo para adicionar ao Matplotlib!
+title: "[ENH]: "
+labels: [Nova funcionalidade]
 body:
-  - type: input
-    id: objetivo
-    attributes:
-      label: Objetivo
-      description: Descreva sobre a nova documentação aqui.
-      placeholder: Descreva o objetivo aqui.
   - type: markdown
     attributes:
       value: |
-        **Etapas:**
-        1. [ ] Descreva a etapa 1 da tarefa aqui
-        2. [ ] Descreva a etapa 2 da tarefa aqui
+        Please search the [issues](https://github.com/matplotlib/matplotlib/issues) for relevant feature requests before creating a new feature request.
 
-        **Responsável:** Adicione o responsável aqui
-        **Revisor:** Adicione o revisor aqui
+        **Problema:**
+
+        *Eu sempre fico frustrado quando [...] porque [...]*
+
+        *Eu gostaria se [...] acontecesse quando eu [...] porque [...]*
+
+        *Aqui está uma imagem de exemplo do que estou pedindo [...]*
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Descreva uma maneira de alcançar os objetivos desta solicitação de recurso.
