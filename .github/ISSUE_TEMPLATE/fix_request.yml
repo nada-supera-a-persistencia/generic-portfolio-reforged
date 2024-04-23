@@ -1,22 +1,25 @@
 # Referência:
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 ---
-    name: Nova Tarefa de Correção
-    description: Adicione uma nova tarefa de correção para o projeto
-    title: "[Fix]: "
-    labels: [Nova correção]
-    body:
-      - type: markdown
-        attributes:
-          value: |
-            **Objetivo:**
-            Descreva sobre a tarefa aqui
-    
-            **Etapas:**
-            1. [ ] Descreva a etapa 1 da tarefa aqui
-            2. [ ] Descreva a etapa 2 da tarefa aqui
-    
-            **Responsável:** @ResponsavelPorDesenvolver
-            **Revisor:** @ResponsavelPorRevisar
-            **Prazo de conclusão:** 00-00-0000
-    
+name: Nova Correção 🛠️
+projects: "nada-supera-a-persistencia/1"
+description: Adicione uma nova tarefa de correção para o projeto
+title: "[Fix]: Digite o título da tarefa aqui"
+labels: ["Nova correção"]
+
+body:
+  - type: textarea
+    attributes:
+      label: Descrição tarefa
+      value: |
+        **🎯 Objetivo:**
+        Descreva o objetivo da tarefa aqui.
+
+        **📋 Etapas:**
+        1. [ ] Etapa 1 da tarefa
+        2. [ ] Etapa 2 da tarefa
+
+        **Responsável:** @NomeDoResponsavel
+        **Revisor:** @NomeDoRevisor
+    validations:
+      required: false

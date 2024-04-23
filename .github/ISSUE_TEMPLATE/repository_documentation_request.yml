@@ -1,22 +1,25 @@
+# Referência:
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+---
 name: Nova Documentação 📓
 projects: "nada-supera-a-persistencia/1"
-description: Nova Tarefa de Documentação do projeto
+description: Adicione uma nova tarefa de documentação do projeto
 title: "[Docs]: Digite o título da tarefa aqui"
 labels: ["Documentação"]
 
 body:
-- type: textarea
-  attributes:
-    label: Descrição tarefa
-    value: |
-         **🎯 Objetivo:**
-         Descreva o objeto da tarefa aqui.
-        
-         **📋 Etapas:**
-         1. [ ] Etapa 1 da tarefa
-         2. [ ] Etapa 2 da tarefa
-        
-         **Responsável:** @NomeDoResponsavel
-         **Revisor:** @NomeDoRevisor
-  validations:
-    required: true
+  - type: textarea
+    attributes:
+      label: Descrição tarefa
+      value: |
+        **🎯 Objetivo:**
+        Descreva o objetivo da tarefa aqui.
+
+        **📋 Etapas:**
+        1. [ ] Etapa 1 da tarefa
+        2. [ ] Etapa 2 da tarefa
+
+        **Responsável:** @NomeDoResponsavel
+        **Revisor:** @NomeDoRevisor
+    validations:
+      required: false
