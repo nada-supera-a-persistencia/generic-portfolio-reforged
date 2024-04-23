@@ -14,11 +14,11 @@
     padding: 1px;
     background: var(--color_primary);
     color: var(--color_secondary);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    box-shadow: var(--color_shadow);
 }
 
 .btn-top:hover {
     background: var(--color_hover);
     transition: all ease-in 200ms;
-    color: #fff;
+    color: var(--color_secondary);
 }
