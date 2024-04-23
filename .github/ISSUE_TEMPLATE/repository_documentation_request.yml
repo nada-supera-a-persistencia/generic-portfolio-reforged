@@ -8,14 +8,14 @@ body:
   attributes:
     label: Descrição tarefa
     value: |
-        - **🎯 Objetivo:**
-        - Descreva o objeto da tarefa aqui.
-        -
-        - **📋 Etapas:**
-        - 1. [ ] Etapa 1 da tarefa
-        - 2. [ ] Etapa 2 da tarefa
-        -
-        - **Responsável:** @NomeDoResponsavel
-        - **Revisor:** @NomeDoRevisor
+         **🎯 Objetivo:**
+         Descreva o objeto da tarefa aqui.
+        
+         **📋 Etapas:**
+         1. [ ] Etapa 1 da tarefa
+         2. [ ] Etapa 2 da tarefa
+        
+         **Responsável:** @NomeDoResponsavel
+         **Revisor:** @NomeDoRevisor
   validations:
     required: true
