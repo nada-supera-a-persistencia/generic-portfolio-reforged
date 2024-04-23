@@ -4,4 +4,14 @@
     --color_gradient: linear-gradient(90deg, var(--color_secondary), var(--color_primary));
     --color_hover: #464343;
     --color_links: #000000;
+    --color_shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    --color_html_icon: #fc4407;
+    --color_css_icon: #006BC0;
+    --color_js_icon: #F7E018;
+    --color_react_icon: #26D9FD;
+    --color_ts_icon: #2F74C0;
+    --color_expo_icon: #0e0d0d;
+    --color_csharp_icon: #410096;
+    --color_sqlServer_icon: #CE4140;
+    --color_postgress_icon: #31648C;
 }
