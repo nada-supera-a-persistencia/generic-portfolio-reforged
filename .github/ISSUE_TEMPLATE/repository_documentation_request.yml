@@ -1,11 +1,14 @@
+name: Nova Tarefa de Documentação
+description: Crie uma nova tarefa de documentação do projeto
+title: "[Docs]: "
+labels: [Documentação]
 body:
   - type: input
     id: objetivo
     attributes:
       label: Objetivo
-      description: Descreva o objetivo da tarefa de documentação
+      description: Descreva sobre a nova documentação aqui
       placeholder: Descreva o objetivo aqui
-      required: true
   - type: markdown
     attributes:
       value: |
