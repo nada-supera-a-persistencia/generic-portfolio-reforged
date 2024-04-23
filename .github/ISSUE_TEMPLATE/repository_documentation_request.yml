@@ -33,7 +33,7 @@ body:
       1. See error...
   validations:
     required: false
-- type: textarea
+- type: markdown
   attributes:
     label: Environment
     description: |
