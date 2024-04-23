@@ -16,4 +16,4 @@ jobs:
           removeOnDirtyLabel: "PR: Sem conflito "
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           commentOnDirty: "Este pull request possui conflitos, por favor resolva-os antes que da revisão."
-          commentOnClean: "Os conflitos foram resolvidos. Aguardo o revisor verificar este pull request."
+          commentOnClean: "Os conflitos foram resolvidos. Aguarde o revisor verificar este pull request."
