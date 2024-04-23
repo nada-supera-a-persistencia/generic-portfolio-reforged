@@ -3,13 +3,15 @@ description: Crie uma nova tarefa de documentação do projeto
 title: "[Docs]: Descreva o título da tarefa aqui"
 labels: [Documentação]
 body:
+  - type: input
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Descreva sobre a nova documentação aqui.
+      placeholder: Descreva o objetivo aqui.
   - type: markdown
     attributes:
       value: |
-        **Objetivo:**
-
-        Descreva sobre a nova documentação aqui.
-
         **Etapas:**
         1. [ ] Descreva a etapa 1 da tarefa aqui
         2. [ ] Descreva a etapa 2 da tarefa aqui
