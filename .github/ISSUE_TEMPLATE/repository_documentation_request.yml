@@ -1,6 +1,6 @@
-name: Nova Melhoria ✨
-description: Nova Tarefa de Documentação
-title: "[Docs]: Descreva o título da tarefa aqui"
+name: Nova Documentação 📓
+description: Nova Tarefa de Documentação do projeto
+title: "[Docs]: Digite o título da tarefa aqui"
 labels: ["Documentação"]
 
 body:
@@ -8,14 +8,14 @@ body:
   attributes:
     label: Descrição tarefa
     value: |
-        - 
-        - **Objetivo:**
+        - **🎯 Objetivo:**
         - Descreva o objeto da tarefa aqui.
-        - **Etapas:**
+        -
+        - **📋 Etapas:**
         - 1. [ ] Etapa 1 da tarefa
         - 2. [ ] Etapa 2 da tarefa
+        -
         - **Responsável:** @NomeDoResponsavel
         - **Revisor:** @NomeDoRevisor
   validations:
     required: true
-
