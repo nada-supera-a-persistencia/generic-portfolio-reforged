@@ -1,15 +1,7 @@
 import "./App.css";
-import html from "./img/html.png";
-import css from "./img/css.png";
 import cssPB from "./img/cssPB.png";
-import js from "./img/js.png";
 import jsPB from "./img/jsPB.png";
-import react from "./img/react-logo-1.png";
 import reactPB from "./img/react-logo-1PB.png";
-import ts from "./img/Typescript.png";
-import csharp from "./img/csharp.png";
-import sqlserver from "./img/sqlserver.png";
-import postgre from "./img/postgres.jpg";
 import expo from "./img/expo.png";
 import nodePB from "./img/nodePB.png";
 import express from "./img/express.png";
@@ -17,6 +9,7 @@ import passApp from "./img/passApp.png";
 import heatmap from "./img/heatmap.png";
 import portifolio from "./img/portifolio.png";
 import PortfolioFooter from "./components/portfolio-footer/index";
+import PortfolioStacks from "./components/portfolio-stacks";
 import PortfolioPageUpButton from "./components/portfolio-page-up-button";
 
 export default function App() {
@@ -258,20 +251,8 @@ export default function App() {
       </div>
 
       {/* <!--Tecnologias--> */}
-      <h1 className="titles" id="stacks">
-        TECNOLOGIAS
-      </h1>
-      <div className="badges">
-        <img className="badges img" src={html} alt="html" />
-        <img className="badges img" src={css} alt="css" />
-        <img className="badges img" src={js} alt="js" />
-        <img className="badges img" src={react} alt="react/react-native" />
-        <img className="badges img" src={expo} alt="expo" />
-        <img className="badges img" src={ts} alt="postgres" />
-        <img className="badges img" src={csharp} alt="csharp" />
-        <img className="badges img" src={sqlserver} alt="sqlserver" />
-        <img className="badges img" src={postgre} alt="postgres" />
-      </div>
+      <PortfolioStacks />
+
 
       {/* Portfolio footer */}
       <PortfolioFooter />
