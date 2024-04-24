@@ -7,21 +7,21 @@
   scroll-behavior: smooth;
   text-decoration: none;
   background: transparent;
-  font-family: 'Barlow', sans-serif;
+  font-family: Barlow, sans-serif;
 }
 
 h1 {
-  font-family: 'Barlow', sans-serif;
+  font-family: Barlow, sans-serif;
 }
 
-.projetoIcon {
+.project-icon {
   display: flexbox;
   justify-content: space-evenly;
   text-align: left;
   align-items: center;
 }
 
-.projetoIcon img {
+.project-icon img {
   height: 4vh;
   width: 4vh;
   padding: 10px;
@@ -31,20 +31,20 @@ h1 {
   border-radius: 50px;
 }
 
-.projetoIcon img:hover {
+.project-icon img:hover {
   transform: scale(1.9);
   border-radius: 8px;
 }
 
-/*Dimensionamento - Padrão*/
-@media (min-width: 1281px) and (orientation: landscape) {
+/* Dimensionamento - Padrão */
+@media (width > 1280px) and (orientation: landscape) {
   .title {
     margin-top: 5%;
     font-size: 13vh;
   }
 
   .subtitle {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     font-size: 4vh;
     margin-top: 0.6vh;
     transition: all ease-in 200ms;
@@ -52,7 +52,7 @@ h1 {
   }
 
   .badge {
-    background: var(--color_gradient);
+    background: var(--color-gradient);
     border-radius: 8px;
     padding: 0.2em 8em 0.2em 0.5em;
     margin-right: -3em;
@@ -67,26 +67,39 @@ h1 {
     height: 0.9vh;
     width: 35vh;
     margin: -0.5vh 0 0 85vh;
-    background: var(--color_gradient);
+    background: var(--color-gradient);
+  }
+
+  i {
+    font-size: 9vh;
+  }
+
+  button i {
+    scale: 0.9;
+  }
+
+  button:hover i {
+    color: #fff;
+    transition: ease-in 0.2s;
   }
 
   .download {
-    font-family: 'Barlow', sans-serif;
-    background: var(--color_gradient);
+    font-family: Barlow, sans-serif;
+    background: var(--color-gradient);
     display: block;
     border-radius: 8px;
-    padding: 0.3em 1em 0.3em 1em;
-    margin: 1em 0 0 0;
+    padding: 0.3em 1em;
+    margin: 1em 0 0;
     font-size: 2.2vh;
     text-align: center;
     width: 35vh;
-    color: var(--color_links);
+    color: var(--color-links);
   }
 
   .download:hover,
   .download:hover i {
-    background: var(--color_hover);
-    color: #ffffff;
+    background: var(--color-hover);
+    color: #fff;
     animation: all ease-in 200ms;
     cursor: pointer;
   }
@@ -101,27 +114,27 @@ h1 {
   }
 
   .link {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     font-size: 2.8vh;
     margin-left: 5vh;
-    color: var(--color_links);
+    color: var(--color-links);
   }
 
   .link:first-child {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     margin-left: 0;
     cursor: default;
-    border-bottom: solid 3px var(--color_primary);
-    color: var(--color_primary);
+    border-bottom: solid 3px var(--color-primary);
+    color: var(--color-primary);
   }
 
   .link:hover {
-    color: var(--color_hover);
+    color: var(--color-hover);
     transition: ease-in 0.2s;
   }
 
   .spam {
-    background: var(--color_primary);
+    background: var(--color-primary);
     height: 100vh;
     width: 1.6vh;
     float: left;
@@ -129,29 +142,30 @@ h1 {
 
   .container-full {
     display: flex;
-    background: #ffffff;
+    background: #fff;
     width: 100%;
     height: 100vh;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .container-col-1 {
     display: flex;
     flex-direction: column;
+    place-content: center;
     align-content: center;
-    justify-content: center;
     height: 90vh;
     width: 100%;
+    background: #fff;
   }
 
   .container-col-2 {
     display: flex;
     flex-direction: column;
+    place-content: center;
     align-content: center;
-    justify-content: center;
     height: 100vh;
     width: 18%;
-    background: var(--color_gradient);
+    background: var(--color-gradient);
   }
 
   .center {
@@ -173,7 +187,7 @@ h1 {
   }
 
   button {
-    background: var(--color_primary);
+    background: var(--color-primary);
     border-radius: 100%;
     border: none;
     height: 7vh;
@@ -183,22 +197,9 @@ h1 {
   }
 
   button:hover {
-    background: var(--color_hover);
+    background: var(--color-hover);
     transition: ease-in 0.2s;
     cursor: pointer;
-  }
-
-  button:hover i {
-    color: #ffffff;
-    transition: ease-in 0.2s;
-  }
-
-  button i {
-    scale: 0.9;
-  }
-
-  i {
-    font-size: 9vh;
   }
 
   .profile {
@@ -206,14 +207,14 @@ h1 {
     width: 48vh;
     margin-left: -68%;
     border-radius: 100%;
-    background: url(https://github.com/dmresende.png) center center;
+    background: url('https://github.com/dmresende.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
   }
 
   .projects {
-    background: var(--color_secondary);
+    background: var(--color-secondary);
     position: absolute;
     height: 58vh;
     width: 100%;
@@ -230,22 +231,22 @@ h1 {
     justify-content: center;
   }
 
-  .card:first-child {
-    margin-left: 0;
-  }
-
   .card {
     position: relative;
     padding: 1.4em;
-    background: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    background: #fff;
+    box-shadow: hsla(0% 0% 0% 20%) 0 4px 12px;
     border-radius: 8px;
     margin-left: 3%;
   }
 
+  .card:first-child {
+    margin-left: 0;
+  }
+
   .card-body {
     margin-top: 25%;
-    padding: 0 1em 0 1em;
+    padding: 0 1em;
   }
 
   .image {
@@ -258,23 +259,23 @@ h1 {
   .card-body h1 {
     text-transform: uppercase;
     font-size: 3.7vh;
-    margin: 0.8em 0 0.5em 0;
+    margin: 0.8em 0 0.5em;
     text-align: end;
   }
 
   .card-body p {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     text-align: justify;
     font-size: 2.53vh;
-    margin: 0.6em 0 1.1em 0;
+    margin: 0.6em 0 1.1em;
   }
 
   .card-body h3 {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     text-transform: uppercase;
     text-align: left;
     font-size: 1.85vh;
-    color: #000000;
+    color: #000;
     opacity: 0.8;
   }
 
@@ -286,7 +287,7 @@ h1 {
   }
 
   .card-button {
-    background: #ffffff;
+    background: #fff;
     border: solid 0.02em #000;
     font-size: 2.5vh;
     text-align: center;
@@ -301,27 +302,9 @@ h1 {
   }
 
   .card-button:hover {
-    background: var(--color_hover);
+    background: var(--color-hover);
     color: #fff;
     transition: ease-in 200ms;
-  }
-
-  .fixed {
-    background: #000000e1;
-    position: absolute;
-    border-radius: 100%;
-    width: 3vh;
-    height: 3vh;
-    margin: 0.4vh 0 0 1vh;
-    text-align: center;
-    font-size: 1.55vh;
-    padding: 0.4em;
-    scale: 1.1;
-    z-index: 1;
-  }
-
-  .fixed i {
-    color: var(--color_secondary);
   }
 
   .about {
@@ -344,53 +327,61 @@ h1 {
   .about p {
     font-size: 2.5vh;
     line-height: 3.2vh;
-    margin: 3.5vh 2.5vh 0 2.5vh;
-  }
-
-  .badges {
-    display: flexbox;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .badges img {
-    height: 5.5vh;
-    width: 5.5vh;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 50px;
-  }
-
-  .badges img:hover {
-    transform: scale(1.9);
-    border-radius: 8px;
+    margin: 3.5vh 2.5vh 0;
   }
 }
 
 /* Dimensionamento Responsivo - Mobile */
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
   .title {
     margin: 6vh 0 0 0.3vh;
     font-size: 6vh;
     width: auto;
   }
 
+  .card-body {
+    margin-top: 25%;
+    padding: 0 2vh;
+  }
+
+  .card-body h1 {
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 3.55vh;
+    margin: 4vh 0 3vh;
+  }
+
+  .card-body p {
+    font-family: Barlow, sans-serif;
+    text-align: justify;
+    font-size: 2.55vh;
+    margin: 0.6em 0.3em 1.1em;
+  }
+
+  .about {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 15vh;
+  }
+
+  .about h1 {
+    font-size: 5.5vh;
+  }
+
+  .about p {
+    font-size: 2.3vh;
+    margin: 5vh 4.7vh -2vh;
+    line-height: 3.2vh;
+    text-align: justify;
+  }
+
   s .center p {
     width: auto;
     font-size: 2.7vh;
     margin-top: 0.2vh;
-  }
-
-  spam {
-    background: #000;
-    position: absolute;
-    width: 100%;
-    height: 5vh;
   }
 
   .top {
@@ -402,28 +393,28 @@ h1 {
   }
 
   .link {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     font-size: 1.8vh;
     margin-left: 2vh;
-    color: var(--color_links);
-  }
-
-  .link:first-child {
-    font-family: 'Barlow', sans-serif;
-    color: #000000;
-    margin-left: 6vh;
-    border-bottom: solid 1px #000000;
-    cursor: default;
-  }
-
-  .link:first-child:hover {
-    color: #000000;
-    cursor: default;
+    color: var(--color-links);
   }
 
   .link:hover {
     color: #fff;
     transition: ease-in 0.2s;
+  }
+
+  .link:first-child {
+    font-family: Barlow, sans-serif;
+    color: #000;
+    margin-left: 6vh;
+    border-bottom: solid 1px #000;
+    cursor: default;
+  }
+
+  .link:first-child:hover {
+    color: #000;
+    cursor: default;
   }
 
   .group {
@@ -436,51 +427,70 @@ h1 {
     scale: 0.6;
   }
 
+  button i {
+    scale: 0.9;
+  }
+
+  .fixed {
+    background: #000000e1;
+    position: absolute;
+    border-radius: 100%;
+    width: 3vh;
+    height: 3vh;
+    margin: 0.4vh 0 0 1vh;
+    text-align: center;
+    font-size: 1.55vh;
+    padding: 0.4em;
+    scale: 1.1;
+    z-index: 1;
+  }
+
+  .fixed i {
+    color: var(--color-secondary);
+  }
+
   button {
-    background: var(--color_primary);
+    background: var(--color-primary);
     border: none;
     border-radius: 100%;
     color: #000;
     height: 7.5vh;
     width: 7.5vh;
-    margin: 0vh 1vh 3vh 1vh;
+    margin: 0 1vh 3vh;
     cursor: pointer;
     display: block;
     text-align: center;
   }
 
   button:hover i {
-    color: #ffffff;
+    color: #fff;
     transition: ease-in 0.2s;
-  }
-
-  button i {
-    scale: 0.9;
   }
 
   .container-full {
     display: block;
-    background: #ffffff;
+    background: #fff;
     height: auto;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .container-col-1 {
     display: flex;
     flex-direction: row;
+    place-content: center;
     align-content: center;
-    justify-content: center;
     width: 100%;
     height: 90vh;
+    background: #fff;
   }
 
   .container-col-2 {
-    background: var(--color_secondary);
+    background: var(--color-secondary);
     display: flex;
     flex-direction: row;
+    place-content: center;
     align-content: center;
-    justify-content: center;
     text-align: center;
     width: 100%;
     height: 10vh;
@@ -499,47 +509,47 @@ h1 {
     height: 36vh;
     width: 36vh;
     border-radius: 100%;
-    background: url(https://github.com/dmresende.png) center center;
+    background: url('https://github.com/dmresende.png') center center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: -48vh 0 0 0;
+    margin: -48vh 0 0;
   }
 
   .badge {
     float: right;
     text-align: initial;
     font-size: 2.3vh;
-    color: #000000;
-    background: var(--color_gradient);
+    color: #000;
+    background: var(--color-gradient);
     padding: 0.2em 2em 0.2em 0.9em;
   }
 
   .download {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     position: absolute;
     display: block;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background: var(--color_gradient);
+    box-shadow: hsla(0% 0% 0% 10%) 0 4px 12px;
+    background: var(--color-gradient);
     border-radius: 8px;
     width: 90%;
     margin-top: 50.5vh;
     margin-left: 5%;
-    padding: 0.5em 0 0.5em 0;
+    padding: 0.5em 0;
     font-size: 2.2vh;
-    color: var(--color_links);
+    color: var(--color-links);
   }
 
   .download:hover,
   .download:hover i {
-    background: var(--color_hover);
-    color: #ffffff;
+    background: var(--color-hover);
+    color: #fff;
     transition: ease-in 0.2s;
     cursor: pointer;
   }
 
   .projects {
-    background: var(--color_secondary);
+    background: var(--color-secondary);
     position: absolute;
     width: 100%;
     height: 10em;
@@ -549,8 +559,8 @@ h1 {
   .card-group {
     display: flex;
     flex-direction: column;
+    place-content: center;
     justify-content: space-between;
-    align-content: center;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -558,22 +568,17 @@ h1 {
 
   .card {
     position: relative;
-    background: #ffffff;
+    background: #fff;
     width: 94%;
     height: 99%;
     margin: 0 0 10% 3%;
     padding: 0;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    box-shadow: hsla(0% 0% 0% 30%) 0 4px 12px;
     border-radius: 8px;
   }
 
   .card:first-child {
     margin-top: 20%;
-  }
-
-  .card-body {
-    margin-top: 25%;
-    padding: 0 2vh 0 2vh;
   }
 
   .image {
@@ -582,27 +587,13 @@ h1 {
     size: contain center center;
   }
 
-  .card-body h1 {
-    text-transform: uppercase;
-    text-align: end;
-    font-size: 3.55vh;
-    margin: 4vh 0 3vh 0;
-  }
-
-  .card-body p {
-    font-family: 'Barlow', sans-serif;
-    text-align: justify;
-    font-size: 2.55vh;
-    margin: 0.6em 0.3em 1.1em 0.3em;
-  }
-
   .card-body h3 {
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     text-transform: uppercase;
     text-align: left;
     margin-left: 0.4em;
     font-size: 1.75vh;
-    color: #000000;
+    color: #000;
     opacity: 0.8;
   }
 
@@ -615,8 +606,8 @@ h1 {
 
   .card-button {
     border: solid 0.02em #000;
-    background: var(--color_gradient);
-    color: #000000;
+    background: var(--color-gradient);
+    color: #000;
     width: 50%;
     text-align: center;
     font-size: 2.5vh;
@@ -630,69 +621,9 @@ h1 {
   }
 
   .card-button:hover {
-    background: var(--color_hover);
-    color: var(--color_secondary);
+    background: var(--color-hover);
+    color: var(--color-secondary);
     transition: ease-in 200ms;
-  }
-
-  .fixed {
-    background: #000000cc;
-    position: absolute;
-    border-radius: 100%;
-    width: 3vh;
-    height: 3vh;
-    margin: 1.8vh 0 0 1vh;
-    text-align: center;
-    font-size: 1.55vh;
-    padding: 0.4em;
-    scale: 1.1;
-    z-index: 1;
-  }
-
-  .fixed i {
-    color: var(--color_secondary);
-  }
-
-  .about {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 15vh;
-  }
-
-  .about h1 {
-    font-size: 5.5vh;
-  }
-
-  .about p {
-    font-size: 2.3vh;
-    margin: 5vh 4.7vh -2vh 4.7vh;
-    line-height: 3.2vh;
-    text-align: justify;
-  }
-
-  .badges {
-    display: flexbox;
-    margin: 6% 15% 0 15%;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-  }
-
-  .badges img {
-    height: 2.8em;
-    width: 2.8em;
-    margin: 0 2vh 3vh 2vh;
-    padding: 10px;
-    border-radius: 50px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .badges img:hover {
-    transform: scale(1.9);
-    border-radius: 8px;
   }
 }
 
@@ -700,8 +631,8 @@ h1 {
   text-align: center;
   padding: 10px;
   border-top: 10px;
+  margin: 3em 0 0;
   margin-top: 50px;
-  margin: 3em 0em 0em 0em;
 }
 
 /* width */
@@ -711,11 +642,11 @@ h1 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color_primary);
-  border-radius: 0px;
+  background: var(--color-primary);
+  border-radius: 0;
 }

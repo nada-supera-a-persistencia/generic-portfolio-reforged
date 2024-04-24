@@ -3,14 +3,13 @@
 }
 
 footer p {
-  font-family: 'Barlow', sans-serif;
+  font-family: Barlow, sans-serif;
   font-size: 0.9em;
-  color: #000000;
-  color: #000000;
+  color: #000;
 }
 
 footer {
-background: #d9d9d9;
+  background: #d9d9d9;
   width: 100%;
   justify-content: center;
   align-items: center;

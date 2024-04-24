@@ -99,14 +99,14 @@ export default function App() {
                 Projeto App Gerador de senhas. Escolha quantos caracteres terá
                 sua senha que salvamos para você.
               </p>
-              <div className="projetoIcon">
+              <div className="project-icon">
                 <img
-                  className="projetoIcon img"
+                  className="project-icon img"
                   src={reactPB}
                   alt="react/react-native"
                 />
-                <img className="projetoIcon img" src={jsPB} alt="js" />
-                <img className="projetoIcon img" src={expo} alt="expo" />
+                <img className="project-icon img" src={jsPB} alt="js" />
+                <img className="project-icon img" src={expo} alt="expo" />
               </div>
               <div className="buttons-group">
                 <a
@@ -142,10 +142,10 @@ export default function App() {
                 Projeto em parceria com Brisa, Unoesc e Governo Federal.
                 Produção de um Heatmap em equipe.
               </p>
-              <div className="projetoIcon">
-                <img className="projetoIcon img" src={jsPB} alt="jsPB" />
-                <img className="projetoIcon img" src={nodePB} alt="nodePB" />
-                <img className="projetoIcon img" src={express} alt="express" />
+              <div className="project-icon">
+                <img className="project-icon img" src={jsPB} alt="jsPB" />
+                <img className="project-icon img" src={nodePB} alt="nodePB" />
+                <img className="project-icon img" src={express} alt="express" />
               </div>
               <div className="buttons-group">
                 <a
@@ -181,14 +181,14 @@ export default function App() {
                 Projeto publicações e atualizações dos meus projetos em um
                 portifólio. Em construção.
               </p>
-              <div className="projetoIcon">
+              <div className="project-icon">
                 <img
-                  className="projetoIcon img"
+                  className="project-icon img"
                   src={reactPB}
                   alt="react/react-native"
                 />
-                <img className="projetoIcon img" src={jsPB} alt="js" />
-                <img className="projetoIcon img" src={cssPB} alt="css" />
+                <img className="project-icon img" src={jsPB} alt="js" />
+                <img className="project-icon img" src={cssPB} alt="css" />
               </div>
               {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
