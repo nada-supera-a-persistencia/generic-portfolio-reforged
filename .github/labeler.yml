@@ -1,22 +1,27 @@
 "Alterado: Workflows":
-  - any-glob-to-any-file:
-      - '.github/workflows/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '.github/workflows/**'
   
 "Alterado: Configurações Repositório":
-  - any-glob-to-any-file:
-      - '.github/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '.github/**'
 
 "Alterado: Componentes":
-  - any-glob-to-any-file:
-      - 'src/components/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'src/components/**'
   
 "Alterado: Imagens":
-  - any-glob-to-any-file:
-      - 'src/img/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'src/img/**'
 
 "Alterado: Estilos":
-  - any-glob-to-any-file:
-      - 'src/shared/styles/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'src/shared/styles/**'
 
 "Alterado: Testes": 
   - changed-files:
