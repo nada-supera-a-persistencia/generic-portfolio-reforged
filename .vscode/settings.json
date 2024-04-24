@@ -4,7 +4,10 @@
     "componente-footer",
     "workflow",
     "componente-stacks",
-    "configuração-repositório"
-  ]
+    "configuração-repositório",
+    "configuração-eslint-prettier"
+  ],
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "editor.detectIndentation": false
 }
-

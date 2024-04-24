@@ -1,15 +1,12 @@
-import React from "react";
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
 import {
-  SiExpo,
   SiCsharp,
-  SiTypescript,
+  SiExpo,
   SiMicrosoftsqlserver,
   SiPostgresql,
-} from "react-icons/si";
-
-import "./styles.css";
+  SiTypescript,
+} from 'react-icons/si';
 
 export default function PortfolioStacks() {
   return (

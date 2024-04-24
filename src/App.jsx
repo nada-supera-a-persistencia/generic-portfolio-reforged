@@ -1,16 +1,16 @@
-import "./App.css";
-import cssPB from "./img/cssPB.png";
-import jsPB from "./img/jsPB.png";
-import reactPB from "./img/react-logo-1PB.png";
-import expo from "./img/expo.png";
-import nodePB from "./img/nodePB.png";
-import express from "./img/express.png";
-import passApp from "./img/passApp.png";
-import heatmap from "./img/heatmap.png";
-import portifolio from "./img/portifolio.png";
-import PortfolioFooter from "./components/portfolio-footer/index";
-import PortfolioStacks from "./components/portfolio-stacks";
-import PortfolioPageUpButton from "./components/portfolio-page-up-button";
+import './App.css';
+import PortfolioFooter from './components/portfolio-footer/index';
+import PortfolioPageUpButton from './components/portfolio-page-up-button';
+import PortfolioStacks from './components/portfolio-stacks';
+import cssPB from './img/cssPB.png';
+import expo from './img/expo.png';
+import express from './img/express.png';
+import heatmap from './img/heatmap.png';
+import jsPB from './img/jsPB.png';
+import nodePB from './img/nodePB.png';
+import passApp from './img/passApp.png';
+import portifolio from './img/portifolio.png';
+import reactPB from './img/react-logo-1PB.png';
 
 export default function App() {
   return (
@@ -252,7 +252,6 @@ export default function App() {
 
       {/* <!--Tecnologias--> */}
       <PortfolioStacks />
-
 
       {/* Portfolio footer */}
       <PortfolioFooter />

@@ -1,4 +1,4 @@
-@import url("../../shared/styles/colors.css");
+@import url('../../shared/styles/colors.css');
 
 .titles {
     text-align: center;
@@ -9,7 +9,7 @@
 }
 
 /* Dimensionamento Responsivo - Mobile */
-@media (max-width:1280px) {
+@media (max-width: 1280px) {
     .badges {
         display: grid;
         grid: repeat(2, 60px) / auto-flow;
@@ -20,7 +20,7 @@
 }
 
 /*Dimensionamento - Padrão*/
-@media (min-width:1281px) and (orientation: landscape) {
+@media (min-width: 1281px) and (orientation: landscape) {
     .badges {
         display: grid;
         grid: repeat(1, 60px) / auto-flow 80px;
