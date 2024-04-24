@@ -1,0 +1,19 @@
+name: "pull merge conflict labeler"
+on:
+  - pull_request_target
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: verificar se os PRs tem conflitos
+        uses: eps1lon/actions-label-merge-conflict@v3
+        with:
+          dirtyLabel: "PR: Com conflito"
+          removeOnDirtyLabel: "PR: Sem conflito "
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          commentOnDirty: "Este pull request possui conflitos, por favor resolva-os antes que da revisão."
+          commentOnClean: "Os conflitos foram resolvidos. Aguarde o revisor verificar este pull request."
