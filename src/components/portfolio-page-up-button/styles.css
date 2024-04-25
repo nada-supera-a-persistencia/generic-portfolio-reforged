@@ -1,24 +1,24 @@
-@import url("../../shared/styles/colors.css");
+@import url('../../shared/styles/colors.css');
 
 .btn-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 3;
-    border-radius: 100%;
-    height: 5.5vh;
-    width: 5.5vh;
-    padding: 1px;
-    background: var(--color_primary);
-    color: var(--color_secondary);
-    box-shadow: var(--color_shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 3;
+  border-radius: 100%;
+  height: 5.5vh;
+  width: 5.5vh;
+  padding: 1px;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  box-shadow: var(--color-shadow);
 }
 
 .btn-top:hover {
-    background: var(--color_hover);
-    transition: all ease-in 200ms;
-    color: var(--color_secondary);
+  background: var(--color-hover);
+  transition: all ease-in 200ms;
+  color: var(--color-secondary);
 }
