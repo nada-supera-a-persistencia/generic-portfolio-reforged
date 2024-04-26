@@ -6,9 +6,11 @@
     "componente-stacks",
     "configuração-repositório",
     "configuração-eslint-prettier"
+    "configuração-repositório"
   ],
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",
   "editor.detectIndentation": false,
   "css.validate": false,
 }
+
