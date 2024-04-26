@@ -1,15 +1,13 @@
-import React from "react";
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
 import {
-  SiExpo,
   SiCsharp,
-  SiTypescript,
+  SiExpo,
   SiMicrosoftsqlserver,
   SiPostgresql,
-} from "react-icons/si";
-
-import "./styles.css";
+  SiTypescript,
+} from 'react-icons/si';
+import './styles.css';
 
 export default function PortfolioStacks() {
   return (
@@ -20,47 +18,47 @@ export default function PortfolioStacks() {
       <div className="badges">
         <FaHtml5
           className="badges img"
-          color="var(--color_html_icon)"
+          color="var(--color-html-icon)"
           size={50}
         />
         <FaCss3Alt
           className="badges img"
-          color="var(--color_css_icon)"
+          color="var(--color-css-icon)"
           size={50}
         />
         <IoLogoJavascript
           className="badges img"
-          color="var(--color_js_icon)"
+          color="var(--color-js-icon)"
           size={50}
         />
         <FaReact
           className="badges img"
-          color="var(--color_react_icon)"
+          color="var(--color-react-icon)"
           size={50}
         />
         <SiTypescript
           className="badges img"
-          color="var(--color_ts_icon)"
+          color="var(--color-ts-icon)"
           size={50}
         />
         <SiExpo
           className="badges img"
-          color="var(--color_expo_icon)"
+          color="var(--color-expo-icon)"
           size={50}
         />
         <SiCsharp
           className="badges img"
-          color="var(--color_csharp_icon)"
+          color="var(--color-csharp-icon)"
           size={50}
         />
         <SiMicrosoftsqlserver
           className="badges img"
-          color="var(--color_sqlServer_icon)"
+          color="var(--color-sql-server-icon)"
           size={50}
         />
         <SiPostgresql
           className="badges img"
-          color="var(--color_postgress_icon)"
+          color="var(--color-postgress-icon)"
           size={50}
         />
       </div>
