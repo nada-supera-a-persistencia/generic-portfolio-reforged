@@ -1,6 +1,6 @@
 import './styles.css';
 
-export default function PortfolioFooter() {
+export function PortfolioFooter() {
   return (
     <footer>
       <p className="rodape">@2024 - PortfolioExemple</p>
