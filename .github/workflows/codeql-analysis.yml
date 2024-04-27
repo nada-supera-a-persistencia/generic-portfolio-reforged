@@ -1,4 +1,4 @@
-name: "CodeQL Analysis"
+name: "CodeQL JavaScript/React Analysis"
 
 on:
   push:
@@ -6,12 +6,15 @@ on:
   pull_request:
     branches: [release]
   schedule:
-    - cron: '0 0 * * 2,5' # Runs at 00:00 (midnight) on Tuesday and Friday
+    - cron: '0 0 * * 2,5' # Roda às 00:00 (meia-noite) de terça e sexta-feira
 
 jobs:
   analyze:
     name: Analyze JavaScript/React
     runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
 
     steps:
       - name: Checkout repository
