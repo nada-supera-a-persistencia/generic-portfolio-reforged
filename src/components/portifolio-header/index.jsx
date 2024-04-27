@@ -1,7 +1,6 @@
-import React from "react";
-import "./style.css";
+import './styles.css';
 
-export default function Header() {
+export default function PortfolioHeader() {
   return (
     <>
       <div className="top">

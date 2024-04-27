@@ -1,35 +1,27 @@
-import "./App.css";
-import html from "./img/html.png";
-import css from "./img/css.png";
-import cssPB from "./img/cssPB.png";
-import js from "./img/js.png";
-import jsPB from "./img/jsPB.png";
-import react from "./img/react-logo-1.png";
-import reactPB from "./img/react-logo-1PB.png";
-import ts from "./img/Typescript.png";
-import csharp from "./img/csharp.png";
-import sqlserver from "./img/sqlserver.png";
-import postgre from "./img/postgres.jpg";
-import expo from "./img/expo.png";
-import nodePB from "./img/nodePB.png";
-import express from "./img/express.png";
-import passApp from "./img/passApp.png";
-import heatmap from "./img/heatmap.png";
-import portifolio from "./img/portifolio.png";
-import PortfolioFooter from "./components/portfolio-footer/index";
-import UpPage from "./components/portifolio-up-page";
-import Header from "./components/portifolio-header";
+import './App.css';
+import PortfolioFooter from './components/portfolio-footer/index';
+import PortfolioPageUpButton from './components/portfolio-page-up-button';
+import PortfolioStacks from './components/portfolio-stacks';
+import cssPB from './img/cssPB.png';
+import expo from './img/expo.png';
+import express from './img/express.png';
+import heatmap from './img/heatmap.png';
+import jsPB from './img/jsPB.png';
+import nodePB from './img/nodePB.png';
+import passApp from './img/passApp.png';
+import portifolio from './img/portifolio.png';
+import reactPB from './img/react-logo-1PB.png';
+import PortfolioHeader from './components/portifolio-header/index';
 
 export default function App() {
   return (
     <>
-      <UpPage />
-
+      <PortfolioPageUpButton />
       <div className="container-full" id="home">
         <span></span>
 
         <div className="container-col-1">
-          <Header />
+          <PortfolioHeader />
 
           <div className="center">
             <div className="group">
@@ -95,14 +87,14 @@ export default function App() {
                 Projeto App Gerador de senhas. Escolha quantos caracteres terá
                 sua senha que salvamos para você.
               </p>
-              <div className="projetoIcon">
+              <div className="project-icon">
                 <img
-                  className="projetoIcon img"
+                  className="project-icon img"
                   src={reactPB}
                   alt="react/react-native"
                 />
-                <img className="projetoIcon img" src={jsPB} alt="js" />
-                <img className="projetoIcon img" src={expo} alt="expo" />
+                <img className="project-icon img" src={jsPB} alt="js" />
+                <img className="project-icon img" src={expo} alt="expo" />
               </div>
               <div className="buttons-group">
                 <a
@@ -138,10 +130,10 @@ export default function App() {
                 Projeto em parceria com Brisa, Unoesc e Governo Federal.
                 Produção de um Heatmap em equipe.
               </p>
-              <div className="projetoIcon">
-                <img className="projetoIcon img" src={jsPB} alt="jsPB" />
-                <img className="projetoIcon img" src={nodePB} alt="nodePB" />
-                <img className="projetoIcon img" src={express} alt="express" />
+              <div className="project-icon">
+                <img className="project-icon img" src={jsPB} alt="jsPB" />
+                <img className="project-icon img" src={nodePB} alt="nodePB" />
+                <img className="project-icon img" src={express} alt="express" />
               </div>
               <div className="buttons-group">
                 <a
@@ -177,14 +169,14 @@ export default function App() {
                 Projeto publicações e atualizações dos meus projetos em um
                 portifólio. Em construção.
               </p>
-              <div className="projetoIcon">
+              <div className="project-icon">
                 <img
-                  className="projetoIcon img"
+                  className="project-icon img"
                   src={reactPB}
                   alt="react/react-native"
                 />
-                <img className="projetoIcon img" src={jsPB} alt="js" />
-                <img className="projetoIcon img" src={cssPB} alt="css" />
+                <img className="project-icon img" src={jsPB} alt="js" />
+                <img className="project-icon img" src={cssPB} alt="css" />
               </div>
               {/*               
               <h3>#react-native &nbsp; #JS &nbsp; #EXPO &nbsp;</h3> */}
@@ -247,20 +239,7 @@ export default function App() {
       </div>
 
       {/* <!--Tecnologias--> */}
-      <h1 className="titles" id="stacks">
-        TECNOLOGIAS
-      </h1>
-      <div className="badges">
-        <img className="badges img" src={html} alt="html" />
-        <img className="badges img" src={css} alt="css" />
-        <img className="badges img" src={js} alt="js" />
-        <img className="badges img" src={react} alt="react/react-native" />
-        <img className="badges img" src={expo} alt="expo" />
-        <img className="badges img" src={ts} alt="postgres" />
-        <img className="badges img" src={csharp} alt="csharp" />
-        <img className="badges img" src={sqlserver} alt="sqlserver" />
-        <img className="badges img" src={postgre} alt="postgres" />
-      </div>
+      <PortfolioStacks />
 
       {/* Portfolio footer */}
       <PortfolioFooter />

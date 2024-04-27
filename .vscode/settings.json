@@ -1,3 +1,15 @@
 {
-  "conventionalCommits.scopes": ["componente-arrow-up", "componente-header"]
+  "conventionalCommits.scopes": [
+    "componente-arrow-up",
+    "componente-footer",
+    "workflow",
+    "componente-stacks",
+    "configuração-eslint-prettier",
+    "configuração-repositório",
+    "componente-header"
+  ],
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "editor.detectIndentation": false,
+  "css.validate": false
 }

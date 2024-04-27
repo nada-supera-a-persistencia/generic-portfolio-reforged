@@ -1,0 +1,25 @@
+# Referência:
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+---
+name: Nova Configuração Repositório/Projeto ⚙️
+projects: "nada-supera-a-persistencia/1"
+description: Adicione uma nova tarefa de configuração do projeto/repositório
+title: "[Conf]: Digite o título da tarefa aqui"
+labels: ["Nova configuração"]
+
+body:
+  - type: textarea
+    attributes:
+      label: Descrição tarefa
+      value: |
+        **🎯 Objetivo:**
+        Descreva o objetivo da tarefa aqui.
+
+        **📋 Etapas:**
+        1. [ ] Etapa 1 da tarefa
+        2. [ ] Etapa 2 da tarefa
+
+        **Responsável:** @NomeDoResponsavel
+        **Revisor:** @NomeDoRevisor
+    validations:
+      required: false
