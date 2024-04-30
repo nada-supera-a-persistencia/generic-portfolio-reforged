@@ -2,8 +2,11 @@ name: "CodeQL JavaScript/React Analysis"
 
 on:
   push:
-    branches:
-      - "pull_request/**"
+    branches: [release]
+  pull_request:
+    branches: [release]
+  schedule:
+    - cron: '0 */5 * * *' # Roda a cada 5 horas
 
 jobs:
   analyze:
@@ -14,7 +17,7 @@ jobs:
       security-events: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Initialize CodeQL
