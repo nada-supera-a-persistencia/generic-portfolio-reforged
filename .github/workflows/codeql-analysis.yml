@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [release]
   schedule:
-    - cron: '0 */5 * * *' # Roda a cada 5 horas
+    - cron: '0 */12 * * *' # Roda a cada 12 horas
 
 jobs:
   analyze:
