@@ -1,0 +1,32 @@
+name: "CodeQL JavaScript/React Analysis"
+
+on:
+  push:
+    branches: [release]
+  pull_request:
+    branches: [release]
+  schedule:
+    - cron: '0 */12 * * *' # Roda a cada 12 horas
+
+jobs:
+  analyze:
+    name: Analyze JavaScript/React
+    runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3

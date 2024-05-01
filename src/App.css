@@ -332,7 +332,7 @@ h1 {
 }
 
 /* Dimensionamento Responsivo - Mobile */
-@media (width <= 1280px) {
+@media (width <=1280px) {
   .title {
     margin: 6vh 0 0 0.3vh;
     font-size: 6vh;
