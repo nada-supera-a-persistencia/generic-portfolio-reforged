@@ -2,7 +2,7 @@ import './styles.css';
 
 export default function PortfolioHeader() {
   return (
-    <div>
+    <div className="top">
       <a className="link" href="#home">
         Inicio
       </a>
