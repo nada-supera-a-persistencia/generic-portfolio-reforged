@@ -1,7 +1,7 @@
 @import url('../../shared/styles/colors.css');
 
 @media (width >= 1281px) and (orientation: landscape) {
-  .top {
+  header {
     position: absolute;
     display: block;
     float: left;
@@ -10,14 +10,14 @@
     margin-left: 7%;
   }
 
-  .link {
+  .header-option {
     font-family: Barlow, sans-serif;
     font-size: 2.8vh;
     margin-left: 5vh;
     color: var(--color-links);
   }
 
-  .link:first-child {
+  .header-option:first-child {
     font-family: Barlow, sans-serif;
     margin-left: 0;
     cursor: default;
@@ -25,7 +25,7 @@
     color: var(--color-primary);
   }
 
-  .link:hover {
+  .header-option:hover {
     color: var(--color-hover);
     transition: ease-in 0.2s;
   }
@@ -33,7 +33,7 @@
 
 /* Dimensionamento Responsivo - Mobile */
 @media (width <= 1280px) {
-  .top {
+  header {
     background: var(--color-primary);
     display: block;
     position: absolute;
@@ -41,14 +41,19 @@
     z-index: 2;
   }
 
-  .link {
+  .header-option {
     font-family: Barlow, sans-serif;
     font-size: 1.8vh;
     margin-left: 2vh;
     color: var(--color-links);
   }
 
-  .link:first-child {
+  .header-option:hover {
+    color: #fff;
+    transition: ease-in 0.2s;
+  }
+
+  .header-option:first-child {
     font-family: Barlow, sans-serif;
     color: #000;
     margin-left: 6vh;
@@ -56,13 +61,8 @@
     cursor: default;
   }
 
-  .link:first-child:hover {
+  .header-option:first-child:hover {
     color: #000;
     cursor: default;
-  }
-
-  link:hover {
-    color: #fff;
-    transition: ease-in 0.2s;
   }
 }
