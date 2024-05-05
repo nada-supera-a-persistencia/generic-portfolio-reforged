@@ -6,7 +6,8 @@
     "componente-stacks",
     "configuração-eslint-prettier",
     "configuração-repositório",
-    "componente-header"
+    "componente-header",
+    "estilização"
   ],
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",

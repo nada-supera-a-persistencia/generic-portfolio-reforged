@@ -1,6 +1,6 @@
 @import url('../../shared/styles/colors.css');
 
-.btn-top {
+.home-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   box-shadow: var(--color-shadow);
 }
 
-.btn-top:hover {
+.home-link:hover {
   background: var(--color-hover);
   transition: all ease-in 200ms;
   color: var(--color-secondary);

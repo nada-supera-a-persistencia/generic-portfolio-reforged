@@ -1,7 +1,4 @@
 import './App.css';
-import PortfolioFooter from './components/portfolio-footer/index';
-import PortfolioPageUpButton from './components/portfolio-page-up-button';
-import PortfolioStacks from './components/portfolio-stacks';
 import cssPB from './img/cssPB.png';
 import expo from './img/expo.png';
 import express from './img/express.png';
@@ -11,16 +8,22 @@ import nodePB from './img/nodePB.png';
 import passApp from './img/passApp.png';
 import portifolio from './img/portifolio.png';
 import reactPB from './img/react-logo-1PB.png';
+import PortfolioFooter from './components/portfolio-footer/index';
+import PortfolioPageUpButton from './components/portfolio-page-up-button';
+import PortfolioStacks from './components/portfolio-stacks';
 import PortfolioHeader from './components/portifolio-header/index';
 
 export default function App() {
   return (
     <>
+      {/* Back home button */}
       <PortfolioPageUpButton />
+
       <div className="container-full" id="home">
         <span></span>
 
         <div className="container-col-1">
+          {/* Header */}
           <PortfolioHeader />
 
           <div className="center">
@@ -238,10 +241,10 @@ export default function App() {
         </div>
       </div>
 
-      {/* <!--Tecnologias--> */}
+      {/* Technologies */}
       <PortfolioStacks />
 
-      {/* Portfolio footer */}
+      {/* Footer */}
       <PortfolioFooter />
 
       <link

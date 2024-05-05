@@ -10,57 +10,23 @@ import {
 import './styles.css';
 
 export default function PortfolioStacks() {
+  const iconSize = 50;
+
   return (
     <>
-      <h1 className="titles" id="stacks">
+      <h1 className="title" id="stacks">
         TECNOLOGIAS
       </h1>
-      <div className="badges">
-        <FaHtml5
-          className="badges img"
-          color="var(--color-html-icon)"
-          size={50}
-        />
-        <FaCss3Alt
-          className="badges img"
-          color="var(--color-css-icon)"
-          size={50}
-        />
-        <IoLogoJavascript
-          className="badges img"
-          color="var(--color-js-icon)"
-          size={50}
-        />
-        <FaReact
-          className="badges img"
-          color="var(--color-react-icon)"
-          size={50}
-        />
-        <SiTypescript
-          className="badges img"
-          color="var(--color-ts-icon)"
-          size={50}
-        />
-        <SiExpo
-          className="badges img"
-          color="var(--color-expo-icon)"
-          size={50}
-        />
-        <SiCsharp
-          className="badges img"
-          color="var(--color-csharp-icon)"
-          size={50}
-        />
-        <SiMicrosoftsqlserver
-          className="badges img"
-          color="var(--color-sql-server-icon)"
-          size={50}
-        />
-        <SiPostgresql
-          className="badges img"
-          color="var(--color-postgress-icon)"
-          size={50}
-        />
+      <div className="icon-group">
+        <FaHtml5 color="var(--color-html)" size={iconSize} />
+        <FaCss3Alt color="var(--color-css)" size={iconSize} />
+        <IoLogoJavascript color="var(--color-js)" size={iconSize} />
+        <FaReact color="var(--color-react)" size={iconSize} />
+        <SiTypescript color="var(--color-ts)" size={iconSize} />
+        <SiExpo color="var(--color-expo)" size={iconSize} />
+        <SiCsharp color="var(--color-csharp)" size={iconSize} />
+        <SiMicrosoftsqlserver color="var(--color-sql-server)" size={iconSize} />
+        <SiPostgresql color="var(--color-postgress-icon)" size={iconSize} />
       </div>
     </>
   );
