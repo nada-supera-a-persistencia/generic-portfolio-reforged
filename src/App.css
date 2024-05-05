@@ -113,26 +113,6 @@ h1 {
     margin-left: 7%;
   }
 
-  .link {
-    font-family: Barlow, sans-serif;
-    font-size: 2.8vh;
-    margin-left: 5vh;
-    color: var(--color-links);
-  }
-
-  .link:first-child {
-    font-family: Barlow, sans-serif;
-    margin-left: 0;
-    cursor: default;
-    border-bottom: solid 3px var(--color-primary);
-    color: var(--color-primary);
-  }
-
-  .link:hover {
-    color: var(--color-hover);
-    transition: ease-in 0.2s;
-  }
-
   .spam {
     background: var(--color-primary);
     height: 100vh;
@@ -390,31 +370,6 @@ h1 {
     position: absolute;
     margin: 1vh 0 0 -23vh;
     z-index: 2;
-  }
-
-  .link {
-    font-family: Barlow, sans-serif;
-    font-size: 1.8vh;
-    margin-left: 2vh;
-    color: var(--color-links);
-  }
-
-  .link:hover {
-    color: #fff;
-    transition: ease-in 0.2s;
-  }
-
-  .link:first-child {
-    font-family: Barlow, sans-serif;
-    color: #000;
-    margin-left: 6vh;
-    border-bottom: solid 1px #000;
-    cursor: default;
-  }
-
-  .link:first-child:hover {
-    color: #000;
-    cursor: default;
   }
 
   .group {
