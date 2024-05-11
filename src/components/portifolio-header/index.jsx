@@ -2,19 +2,19 @@ import './styles.css';
 
 export default function PortfolioHeader() {
   return (
-    <div className="top" role="group">
-      <a className="link" href="#home">
+    <header role="group">
+      <a className="header-option" href="#home">
         Inicio
       </a>
-      <a className="link" href="#projects">
+      <a className="header-option" href="#projects">
         Projetos
       </a>
-      <a className="link" href="#about">
+      <a className="header-option" href="#about">
         Sobre
       </a>
-      <a className="link" href="#stacks">
+      <a className="header-option" href="#stacks">
         Tecnologias
       </a>
-    </div>
+    </header>
   );
 }

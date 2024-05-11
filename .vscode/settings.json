@@ -7,7 +7,8 @@
     "configuração-eslint-prettier",
     "configuração-repositório",
     "componente-header",
-    "testes"
+    "testes",
+    "estilização"
   ],
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",

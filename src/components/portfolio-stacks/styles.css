@@ -1,14 +1,27 @@
 @import url('../../shared/styles/colors.css');
 
-.titles {
+:root {
+  --color-html: #fc4407;
+  --color-css: #006bc0;
+  --color-js: #f0db4f;
+  --color-react: #26d9fd;
+  --color-ts: #2f74c0;
+  --color-expo: #0e0d0d;
+  --color-csharp: #410096;
+  --color-sql-server: #ce4140;
+  --color-postgress: #31648c;
+}
+
+.title {
   text-align: center;
   padding: 10px;
   border-top: 10px;
   margin: 3em 0 0;
   margin-top: 50px;
+  font-size: 7vh;
 }
 
-.badges {
+.icon-group {
   display: grid;
   place-content: center;
   align-content: center;
@@ -17,7 +30,7 @@
 
 /* Dimensionamento - Mobile */
 @media (width <= 1280px) {
-  .badges {
+  .icon-group {
     grid: repeat(2, 60px) / auto-flow;
     margin: 6% 15% 0;
   }
@@ -25,7 +38,7 @@
 
 /* Dimensionamento - Padrão */
 @media (width > 1280px) and (orientation: landscape) {
-  .badges {
+  .icon-group {
     grid: repeat(1, 60px) / auto-flow 80px;
     margin-top: 10px;
   }
