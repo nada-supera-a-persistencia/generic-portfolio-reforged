@@ -36,7 +36,6 @@ describe('PortfolioHeader', () => {
     const aboutText = /Sobre/i;
     const aboutElement = await screen.findByText(aboutText);
 
-    
     expect(aboutElement).toBeInTheDocument();
     expect(aboutElement).toHaveAttribute('href', '#about');
     expect(aboutElement).toHaveClass('link');

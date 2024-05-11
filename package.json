@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 && npx stylelint '**/*.css'",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 && stylelint src/**/*.css",
     "preview": "vite preview",
     "test": "vitest",
     "test:watch": "vitest --watch",
