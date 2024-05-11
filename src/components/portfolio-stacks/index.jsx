@@ -15,7 +15,7 @@ export default function PortfolioStacks() {
       <h1 className="titles" id="stacks">
         TECNOLOGIAS
       </h1>
-      <div className="badges">
+      <div className="badges" role="contentinfo">
         <FaHtml5
           className="badges img"
           color="var(--color-html-icon)"
