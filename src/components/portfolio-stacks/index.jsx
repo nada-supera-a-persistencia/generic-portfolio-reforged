@@ -17,7 +17,7 @@ export default function PortfolioStacks() {
       <h1 className="title" id="stacks">
         TECNOLOGIAS
       </h1>
-      <div className="icon-group">
+      <div className="icon-group" role="contentinfo">
         <FaHtml5 color="var(--color-html)" size={iconSize} />
         <FaCss3Alt color="var(--color-css)" size={iconSize} />
         <IoLogoJavascript color="var(--color-js)" size={iconSize} />

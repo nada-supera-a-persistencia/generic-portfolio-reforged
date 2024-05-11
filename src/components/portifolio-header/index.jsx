@@ -2,7 +2,7 @@ import './styles.css';
 
 export default function PortfolioHeader() {
   return (
-    <header>
+    <header role="group">
       <a className="header-option" href="#home">
         Inicio
       </a>
