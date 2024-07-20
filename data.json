@@ -1,0 +1,46 @@
+{
+  "name": "Person Full Name",
+  "role": "Software Developer",
+  "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "resumeUrl": "https://www.example.com/resume.pdf",
+  "profilePicture": "https://ui-avatars.com/api/?name=Person+Full+Name",
+  "socialNetworks": [
+    { "icon": "fa-github", "url": "https://github.com/..." },
+    { "icon": "fa-linkedin", "url": "https://www.linkedin.com/in/..." }
+  ],
+  "projects": [
+    {
+      "name": "App one",
+      "image": "app-photo-exemple.png",
+      "description": "Lorem ipsum dolor sit amet...",
+      "techStackIcons": ["react-logo.png"],
+      "codeUrl": "https://github.com/...",
+      "projectUrl": "https://www.example.com/app-one"
+    },
+    {
+      "name": "App two",
+      "image": "app-photo-exemple.png",
+      "description": "Lorem ipsum dolor sit amet...",
+      "techStackIcons": ["react-logo.png"],
+      "codeUrl": "https://github.com/...",
+      "projectUrl": "https://www.example.com/app-two"
+    },
+    {
+      "name": "App three",
+      "image": "app-photo-exemple.png",
+      "description": "Lorem ipsum dolor sit amet...",
+      "techStackIcons": ["react-logo.png"],
+      "codeUrl": "https://github.com/...",
+      "projectUrl": "https://www.example.com/app-three"
+    }
+  ],
+  "techStackIcons": [
+    "react-logo.png",
+    "react-logo.png",
+    "react-logo.png",
+    "react-logo.png",
+    "react-logo.png",
+    "react-logo.png",
+    "react-logo.png"
+  ]
+}
