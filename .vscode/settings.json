@@ -8,7 +8,8 @@
     "configuração-repositório",
     "componente-header",
     "testes",
-    "estilização"
+    "estilização",
+    "refatoração-diversos-módulos"
   ],
   "editor.tabSize": 2,
   "editor.indentSize": "tabSize",

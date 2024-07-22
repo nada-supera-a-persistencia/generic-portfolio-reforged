@@ -4,16 +4,16 @@ export default function PortfolioHeader() {
   return (
     <header role="group">
       <a className="header-option" href="#home">
-        Inicio
+        Home
       </a>
       <a className="header-option" href="#projects">
-        Projetos
+        Projects
       </a>
       <a className="header-option" href="#about">
-        Sobre
+        About
       </a>
       <a className="header-option" href="#stacks">
-        Tecnologias
+        Techs
       </a>
     </header>
   );
