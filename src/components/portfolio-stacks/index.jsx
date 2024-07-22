@@ -2,7 +2,6 @@ import portfolioData from '../../../data.json';
 import './styles.css';
 
 export default function PortfolioStacks() {
-  const iconSize = 50;
   const { techStackIcons } = portfolioData;
 
   return (
@@ -16,7 +15,7 @@ export default function PortfolioStacks() {
             key={index}
             src={iconPath}
             alt={`Ícone de tecnologia ${index + 1}`}
-            style={{ width: iconSize, height: iconSize }}
+            style={{ width: 50, height: 50 }}
           />
         ))}
       </div>
