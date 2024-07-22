@@ -3,8 +3,8 @@ import { FaArrowUp } from 'react-icons/fa';
 
 export default function PortfolioPageUpButton() {
   return (
-    <a href="#home" className="home-link">
+    <button href="#home" className="home-link" role="button">
       <FaArrowUp />
-    </a>
+    </button>
   );
 }

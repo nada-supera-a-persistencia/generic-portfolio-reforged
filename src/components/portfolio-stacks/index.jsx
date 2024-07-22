@@ -9,7 +9,7 @@ export default function PortfolioStacks() {
       <h1 className="title" id="stacks">
         Techs
       </h1>
-      <div className="icon-group">
+      <div className="icon-group" role="contentinfo">
         {techStackIcons.map((iconPath, index) => (
           <img
             key={index}
