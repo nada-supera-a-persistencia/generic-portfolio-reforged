@@ -1,4 +1,4 @@
-import PortfolioPageUpButton from '../src/components/portfolio-page-up-button';
+import PortfolioPageUpButton from '.';
 import { describe, test, expect, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
